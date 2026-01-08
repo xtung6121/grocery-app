@@ -15,10 +15,8 @@
 		154130B92F0D542A0049340B /* MButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154130B82F0D542A0049340B /* MButton.swift */; };
 		154130BD2F0D585B0049340B /* ColorSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154130BC2F0D585B0049340B /* ColorSet.swift */; };
 		15E5698A2F0E14A90068B865 /* MButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15E569892F0E14A90068B865 /* MButton.xib */; };
-		15E569902F0E1B7A0068B865 /* AppChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E5698F2F0E1B7A0068B865 /* AppChildViewController.swift */; };
-		15E569922F0E1BAD0068B865 /* AppChildViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15E569912F0E1BAD0068B865 /* AppChildViewController.xib */; };
-		15E569942F0E47650068B865 /* UIStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E569932F0E47650068B865 /* UIStartView.swift */; };
-		15E569962F0E478B0068B865 /* UIStartVIew.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15E569952F0E478B0068B865 /* UIStartVIew.xib */; };
+		15E569902F0E1B7A0068B865 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E5698F2F0E1B7A0068B865 /* StartViewController.swift */; };
+		15E569922F0E1BAD0068B865 /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15E569912F0E1BAD0068B865 /* StartViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,10 +30,8 @@
 		154130B82F0D542A0049340B /* MButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MButton.swift; sourceTree = "<group>"; };
 		154130BC2F0D585B0049340B /* ColorSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSet.swift; sourceTree = "<group>"; };
 		15E569892F0E14A90068B865 /* MButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MButton.xib; sourceTree = "<group>"; };
-		15E5698F2F0E1B7A0068B865 /* AppChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppChildViewController.swift; sourceTree = "<group>"; };
-		15E569912F0E1BAD0068B865 /* AppChildViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppChildViewController.xib; sourceTree = "<group>"; };
-		15E569932F0E47650068B865 /* UIStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStartView.swift; sourceTree = "<group>"; };
-		15E569952F0E478B0068B865 /* UIStartVIew.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIStartVIew.xib; sourceTree = "<group>"; };
+		15E5698F2F0E1B7A0068B865 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		15E569912F0E1BAD0068B865 /* StartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,10 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				154130B72F0D53FD0049340B /* CustomView */,
-				15E5698F2F0E1B7A0068B865 /* AppChildViewController.swift */,
-				15E569912F0E1BAD0068B865 /* AppChildViewController.xib */,
-				15E569932F0E47650068B865 /* UIStartView.swift */,
-				15E569952F0E478B0068B865 /* UIStartVIew.xib */,
+				15E5698F2F0E1B7A0068B865 /* StartViewController.swift */,
+				15E569912F0E1BAD0068B865 /* StartViewController.xib */,
 			);
 			path = UIPageViewController;
 			sourceTree = "<group>";
@@ -186,8 +180,7 @@
 				154130AB2F0D4D5E0049340B /* LaunchScreen.storyboard in Resources */,
 				15E5698A2F0E14A90068B865 /* MButton.xib in Resources */,
 				154130A82F0D4D5E0049340B /* Assets.xcassets in Resources */,
-				15E569962F0E478B0068B865 /* UIStartVIew.xib in Resources */,
-				15E569922F0E1BAD0068B865 /* AppChildViewController.xib in Resources */,
+				15E569922F0E1BAD0068B865 /* StartViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,10 +192,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				154130A32F0D4D5B0049340B /* ViewController.swift in Sources */,
-				15E569942F0E47650068B865 /* UIStartView.swift in Sources */,
 				154130B92F0D542A0049340B /* MButton.swift in Sources */,
 				1541309F2F0D4D5B0049340B /* AppDelegate.swift in Sources */,
-				15E569902F0E1B7A0068B865 /* AppChildViewController.swift in Sources */,
+				15E569902F0E1B7A0068B865 /* StartViewController.swift in Sources */,
 				154130A12F0D4D5B0049340B /* SceneDelegate.swift in Sources */,
 				154130BD2F0D585B0049340B /* ColorSet.swift in Sources */,
 			);
