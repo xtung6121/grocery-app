@@ -3,8 +3,7 @@
 
 import UIKit
 
-class StartViewController: UIViewController {
-    
+class SplashPageViewController: UIViewController {
     @IBOutlet weak var scLb: UILabel!
     @IBOutlet weak var firstLb: UILabel!
     @IBOutlet weak var viewHeader: UIView!
