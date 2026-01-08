@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AppChildViewController" customModule="grocery_app" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StartViewController" customModule="grocery_app" customModuleProvider="target">
             <connections>
                 <outlet property="backgroundImage" destination="uSy-wv-xCB" id="dOF-xD-qyh"/>
                 <outlet property="btnStart" destination="XmQ-fy-Nkh" id="IGW-kp-jSp"/>

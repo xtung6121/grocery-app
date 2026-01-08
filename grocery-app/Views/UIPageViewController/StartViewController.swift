@@ -3,7 +3,7 @@
 
 import UIKit
 
-class AppChildViewController: UIViewController {
+class StartViewController: UIViewController {
     
     @IBOutlet weak var scLb: UILabel!
     @IBOutlet weak var firstLb: UILabel!
