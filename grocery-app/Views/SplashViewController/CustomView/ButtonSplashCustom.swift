@@ -1,6 +1,6 @@
 import UIKit
 
-final class CustomSplashBtn: UIView {
+final class ButtonSplashCustom: UIView {
 
     @IBOutlet private weak var contentView: UIView!
     @IBOutlet private weak var btn: UIButton!
@@ -24,7 +24,7 @@ final class CustomSplashBtn: UIView {
     // MARK: - Load XIB
     private func loadNib() {
         Bundle.main.loadNibNamed(
-            "CustomSplashBtn",
+            "ButtonSplashCustom",
             owner: self,
             options: nil
         )
@@ -37,12 +37,12 @@ final class CustomSplashBtn: UIView {
     // MARK: - Setup UI
     private func setupButton() {
         btn.backgroundColor = ColorSet.primaryButton.color
-        btn.setTitle("Get Started", for: .normal)
+        btn.setTitle("Get started", for: .normal)
+        btn.setTitleColor(.white, for: .normal)
+        btn.titleLabel?.font = .systemFont(ofSize: 16)
+        btn.layer.cornerRadius = 5
     }
     
-    private func configButton(titte: String = "", backgroundColor: UIColor, font: UIFont = .systemFont(ofSize: 13) ) {
-//        btn.setTitle = titte
-    }
     // MARK: - Action
     @IBAction private func btnDidTap(_ sender: UIButton) {
         buttonDidTap?()

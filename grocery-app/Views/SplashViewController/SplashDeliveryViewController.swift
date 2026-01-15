@@ -1,25 +1,104 @@
-//
-//  SplashPage3ViewController.swift
-//  grocery-app
-//
-//  Created by PRO on 1/8/26.
-//
 
 import UIKit
 
-class SplashPage3ViewController: UIViewController {
-    @IBOutlet weak var nextBtn: UIButton!
-    @IBOutlet weak var bgImageView: UIImageView!
-    @IBOutlet weak var contentView: UIView!
-    @IBOutlet weak var pageControl: UIPageControl!
-    @IBOutlet weak var skipBtn: UIButton!
+enum DeliverySplashScreen: CaseIterable {
+    case buy
+    case fast
+    case quality
     
-    override func viewDidLoad() {
-        overrideUserInterfaceStyle = .light
-        setupView()
+    var title: String {
+        switch self {
+        case .buy:
+            return "Buy Grocery"
+        case .fast:
+            return "Fast Delivery"
+        case .quality:
+            return "Enjoy Quality Food"
+        }
     }
     
-    func setupView() {
+    var subTitle: String {
+        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy"
+    }
+    
+    var imageName: String {
+        switch self {
+        case .buy:
+            return "DeliveryCuate"
+        case .fast:
+            return "onlineGroceries"
+        case .quality:
+            return "Passionate"
+        }
+    }
+    
+    var index: Int {
+        Self.allCases.firstIndex(of: self) ?? 0
+    }
+}
+
+class SplashDeliveryViewController: UIViewController {
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet weak var nextBtn: UIButton!
+    @IBOutlet weak var lbSplash: CustomLbSplash!
+    @IBOutlet weak var skipBtn: UIButton!
+    
+    
+    private var state: DeliverySplashScreen = .buy {
+        didSet {
+            render()
+        }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupView()
         
+    }
+    
+    private func setupView() {
+        overrideUserInterfaceStyle = .light
+        view.backgroundColor = .systemBackground
+        imageView.image = UIImage(named: "DeliveryCuate")
+        skipBtn.setTitle("Skip", for: .normal)
+        skipBtn.titleLabel?.font = .systemFont(ofSize: 12, weight: .thin)
+        skipBtn.setTitleColor(.darkGray, for: .normal)
+        
+        nextBtn.setTitle("Next", for: .normal)
+        nextBtn.titleLabel?.font = .systemFont(ofSize: 12, weight: .thin)
+        nextBtn.setTitleColor(ColorSet.primaryButton.color, for: .normal)
+    }
+    
+    private func render() {
+        imageView.image = UIImage(named: state.imageName)
+        
+        lbSplash.config(title: state.title, subTitle: state.subTitle, numberOfLines: 2)
+        
+        pageControl.currentPage = state.index
+        pageControl.numberOfPages = DeliverySplashScreen.allCases.count
+        
+//        skipBtn.isHidden = (state == .quality)
+        nextBtn.setTitle(state == .quality ? "Start" : "Next", for: .normal)
+        
+        
+    }
+        
+    @IBAction func skipBtnDidTap(_ sender: Any) {
+        self.navigationController?.pushViewController(HomeViewController(), animated: true)
+    }
+    
+    @IBAction func nextBtnDidTap(_ sender: Any) {
+        let allScreens = DeliverySplashScreen.allCases
+        let currentIndex = state.index
+        
+        
+        if currentIndex < allScreens.count - 1 {
+            state = allScreens[currentIndex + 1]
+        }
+        
+        else {
+            self.navigationController?.pushViewController(HomeViewController(), animated: true)
+        }
     }
 }

@@ -1,45 +1,62 @@
-//
-//  CustomLbSplash.swift
-//  grocery-app
-//
-//  Created by PRO on 1/8/26.
-//
-
 import UIKit
 
-class CustomLbSplash: UILabel {
-    @IBOutlet weak var scLb: UILabel!
-    @IBOutlet weak var contentView: UIView!
-    @IBOutlet weak var firstLb: UILabel!
+final class CustomLbSplash: UIView {
     
+    @IBOutlet private weak var contentView: UIView!
+    @IBOutlet private weak var firstLb: UILabel!
+    @IBOutlet private weak var scLb: UILabel!
+    
+    // MARK: - Init
     override init(frame: CGRect) {
         super.init(frame: frame)
-        loadXib()
+        commonInit()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        loadXib()
-        setupLb()
+        commonInit()
     }
     
-    private func loadXib() {
-        Bundle.main.loadNibNamed("CustomLbSplash", owner: self, options: nil)
-        overrideUserInterfaceStyle = .light
+    // MARK: - Setup
+    private func commonInit() {
+        loadNib()
+        setupUI()
+    }
+    
+    private func loadNib() {
+        Bundle.main.loadNibNamed(
+            String(describing: Self.self),
+            owner: self,
+            options: nil
+        )
+        
         addSubview(contentView)
         contentView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            contentView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            contentView.trailingAnchor.constraint(equalTo: trailingAnchor),
             contentView.topAnchor.constraint(equalTo: topAnchor),
-            contentView.bottomAnchor.constraint(equalTo: bottomAnchor)
+            contentView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            contentView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            contentView.trailingAnchor.constraint(equalTo: trailingAnchor)
         ])
     }
     
-    func setupLb() {
-        firstLb.text = "hello"
-        scLb.text = "lorem"
+    private func setupUI() {
+        firstLb.font = .systemFont(ofSize: 32, weight: .bold)
+        firstLb.textColor = .black
+        firstLb.textAlignment = .center
+        firstLb.numberOfLines = 2
+        
+        scLb.font = .systemFont(ofSize: 16, weight: .medium)
+        scLb.textColor = .gray
+        scLb.textAlignment = .center
+        scLb.numberOfLines = 2
     }
     
+    func config(title: String, subTitle: String, numberOfLines: Int) {
+        firstLb.text = title
+        scLb.text = subTitle
+        firstLb.numberOfLines = numberOfLines
+        scLb.numberOfLines = numberOfLines
+    }
 }

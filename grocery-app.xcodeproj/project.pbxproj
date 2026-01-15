@@ -7,41 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		15097E472F0FAB870083F533 /* SplashPage2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15097E462F0FAB870083F533 /* SplashPage2ViewController.swift */; };
-		15097E492F0FAD6B0083F533 /* SplashPage2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15097E482F0FAD6B0083F533 /* SplashPage2ViewController.xib */; };
-		15097E4B2F0FADCA0083F533 /* SplashPage3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15097E4A2F0FADCA0083F533 /* SplashPage3ViewController.swift */; };
-		15097E4D2F0FADDF0083F533 /* SplashPage3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15097E4C2F0FADDF0083F533 /* SplashPage3ViewController.xib */; };
+		15097E4B2F0FADCA0083F533 /* SplashDeliveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15097E4A2F0FADCA0083F533 /* SplashDeliveryViewController.swift */; };
+		15097E4D2F0FADDF0083F533 /* SplashDeliveryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15097E4C2F0FADDF0083F533 /* SplashDeliveryViewController.xib */; };
 		15097E4F2F0FB2B30083F533 /* CustomLbSplash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15097E4E2F0FB2B30083F533 /* CustomLbSplash.swift */; };
 		15097E512F0FB2CC0083F533 /* CustomLbSplash.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15097E502F0FB2CC0083F533 /* CustomLbSplash.xib */; };
+		151B0DDB2F14EEF5009003AC /* SplashPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151B0DDA2F14EEF5009003AC /* SplashPageViewController.swift */; };
+		151B0DDD2F14EF19009003AC /* SplashPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 151B0DDC2F14EF19009003AC /* SplashPageViewController.xib */; };
+		153580322F18CA9C00278D38 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153580312F18CA9C00278D38 /* LoginViewController.swift */; };
 		1541309F2F0D4D5B0049340B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1541309E2F0D4D5B0049340B /* AppDelegate.swift */; };
 		154130A12F0D4D5B0049340B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154130A02F0D4D5B0049340B /* SceneDelegate.swift */; };
 		154130A82F0D4D5E0049340B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 154130A72F0D4D5E0049340B /* Assets.xcassets */; };
 		154130AB2F0D4D5E0049340B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 154130A92F0D4D5E0049340B /* LaunchScreen.storyboard */; };
-		154130B92F0D542A0049340B /* MButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154130B82F0D542A0049340B /* MButton.swift */; };
+		154130B92F0D542A0049340B /* ButtonSplashCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154130B82F0D542A0049340B /* ButtonSplashCustom.swift */; };
 		154130BD2F0D585B0049340B /* ColorSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154130BC2F0D585B0049340B /* ColorSet.swift */; };
-		15E5698A2F0E14A90068B865 /* MButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15E569892F0E14A90068B865 /* MButton.xib */; };
-		15E569902F0E1B7A0068B865 /* SplashPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E5698F2F0E1B7A0068B865 /* SplashPageViewController.swift */; };
-		15E569922F0E1BAD0068B865 /* SplashPageVIewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15E569912F0E1BAD0068B865 /* SplashPageVIewController.xib */; };
+		155CF29A2F18881200DE729A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155CF2992F18881200DE729A /* HomeViewController.swift */; };
+		15E5698A2F0E14A90068B865 /* ButtonSplashCustom.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15E569892F0E14A90068B865 /* ButtonSplashCustom.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		15097E462F0FAB870083F533 /* SplashPage2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPage2ViewController.swift; sourceTree = "<group>"; };
-		15097E482F0FAD6B0083F533 /* SplashPage2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashPage2ViewController.xib; sourceTree = "<group>"; };
-		15097E4A2F0FADCA0083F533 /* SplashPage3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPage3ViewController.swift; sourceTree = "<group>"; };
-		15097E4C2F0FADDF0083F533 /* SplashPage3ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashPage3ViewController.xib; sourceTree = "<group>"; };
+		15097E4A2F0FADCA0083F533 /* SplashDeliveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashDeliveryViewController.swift; sourceTree = "<group>"; };
+		15097E4C2F0FADDF0083F533 /* SplashDeliveryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashDeliveryViewController.xib; sourceTree = "<group>"; };
 		15097E4E2F0FB2B30083F533 /* CustomLbSplash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLbSplash.swift; sourceTree = "<group>"; };
 		15097E502F0FB2CC0083F533 /* CustomLbSplash.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomLbSplash.xib; sourceTree = "<group>"; };
+		151B0DDA2F14EEF5009003AC /* SplashPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPageViewController.swift; sourceTree = "<group>"; };
+		151B0DDC2F14EF19009003AC /* SplashPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashPageViewController.xib; sourceTree = "<group>"; };
+		153580312F18CA9C00278D38 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1541309B2F0D4D5B0049340B /* grocery-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "grocery-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1541309E2F0D4D5B0049340B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		154130A02F0D4D5B0049340B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		154130A72F0D4D5E0049340B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		154130AA2F0D4D5E0049340B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		154130AC2F0D4D5E0049340B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		154130B82F0D542A0049340B /* MButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MButton.swift; sourceTree = "<group>"; };
+		154130B82F0D542A0049340B /* ButtonSplashCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSplashCustom.swift; sourceTree = "<group>"; };
 		154130BC2F0D585B0049340B /* ColorSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSet.swift; sourceTree = "<group>"; };
-		15E569892F0E14A90068B865 /* MButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MButton.xib; sourceTree = "<group>"; };
-		15E5698F2F0E1B7A0068B865 /* SplashPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPageViewController.swift; sourceTree = "<group>"; };
-		15E569912F0E1BAD0068B865 /* SplashPageVIewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashPageVIewController.xib; sourceTree = "<group>"; };
+		155CF2992F18881200DE729A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		15E569892F0E14A90068B865 /* ButtonSplashCustom.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonSplashCustom.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		153580302F18CA6C00278D38 /* WelcomeToSignUpSignIn */ = {
+			isa = PBXGroup;
+			children = (
+				153580312F18CA9C00278D38 /* LoginViewController.swift */,
+			);
+			path = WelcomeToSignUpSignIn;
+			sourceTree = "<group>";
+		};
 		154130922F0D4D5A0049340B = {
 			isa = PBXGroup;
 			children = (
@@ -89,12 +97,10 @@
 			isa = PBXGroup;
 			children = (
 				154130B72F0D53FD0049340B /* CustomView */,
-				15E5698F2F0E1B7A0068B865 /* SplashPageViewController.swift */,
-				15E569912F0E1BAD0068B865 /* SplashPageVIewController.xib */,
-				15097E462F0FAB870083F533 /* SplashPage2ViewController.swift */,
-				15097E482F0FAD6B0083F533 /* SplashPage2ViewController.xib */,
-				15097E4A2F0FADCA0083F533 /* SplashPage3ViewController.swift */,
-				15097E4C2F0FADDF0083F533 /* SplashPage3ViewController.xib */,
+				15097E4A2F0FADCA0083F533 /* SplashDeliveryViewController.swift */,
+				15097E4C2F0FADDF0083F533 /* SplashDeliveryViewController.xib */,
+				151B0DDA2F14EEF5009003AC /* SplashPageViewController.swift */,
+				151B0DDC2F14EF19009003AC /* SplashPageViewController.xib */,
 			);
 			path = SplashViewController;
 			sourceTree = "<group>";
@@ -102,8 +108,8 @@
 		154130B72F0D53FD0049340B /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
-				154130B82F0D542A0049340B /* MButton.swift */,
-				15E569892F0E14A90068B865 /* MButton.xib */,
+				154130B82F0D542A0049340B /* ButtonSplashCustom.swift */,
+				15E569892F0E14A90068B865 /* ButtonSplashCustom.xib */,
 				15097E4E2F0FB2B30083F533 /* CustomLbSplash.swift */,
 				15097E502F0FB2CC0083F533 /* CustomLbSplash.xib */,
 			);
@@ -129,9 +135,19 @@
 		154130BE2F0D5A9B0049340B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				153580302F18CA6C00278D38 /* WelcomeToSignUpSignIn */,
+				155CF2982F1887FD00DE729A /* Home */,
 				154130B22F0D518D0049340B /* SplashViewController */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		155CF2982F1887FD00DE729A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				155CF2992F18881200DE729A /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,13 +208,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				151B0DDD2F14EF19009003AC /* SplashPageViewController.xib in Resources */,
 				154130AB2F0D4D5E0049340B /* LaunchScreen.storyboard in Resources */,
-				15E5698A2F0E14A90068B865 /* MButton.xib in Resources */,
-				15097E4D2F0FADDF0083F533 /* SplashPage3ViewController.xib in Resources */,
+				15E5698A2F0E14A90068B865 /* ButtonSplashCustom.xib in Resources */,
+				15097E4D2F0FADDF0083F533 /* SplashDeliveryViewController.xib in Resources */,
 				15097E512F0FB2CC0083F533 /* CustomLbSplash.xib in Resources */,
-				15097E492F0FAD6B0083F533 /* SplashPage2ViewController.xib in Resources */,
 				154130A82F0D4D5E0049340B /* Assets.xcassets in Resources */,
-				15E569922F0E1BAD0068B865 /* SplashPageVIewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,14 +224,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				154130B92F0D542A0049340B /* MButton.swift in Sources */,
-				15097E4B2F0FADCA0083F533 /* SplashPage3ViewController.swift in Sources */,
+				154130B92F0D542A0049340B /* ButtonSplashCustom.swift in Sources */,
+				15097E4B2F0FADCA0083F533 /* SplashDeliveryViewController.swift in Sources */,
 				1541309F2F0D4D5B0049340B /* AppDelegate.swift in Sources */,
+				155CF29A2F18881200DE729A /* HomeViewController.swift in Sources */,
 				15097E4F2F0FB2B30083F533 /* CustomLbSplash.swift in Sources */,
-				15E569902F0E1B7A0068B865 /* SplashPageViewController.swift in Sources */,
 				154130A12F0D4D5B0049340B /* SceneDelegate.swift in Sources */,
 				154130BD2F0D585B0049340B /* ColorSet.swift in Sources */,
-				15097E472F0FAB870083F533 /* SplashPage2ViewController.swift in Sources */,
+				153580322F18CA9C00278D38 /* LoginViewController.swift in Sources */,
+				151B0DDB2F14EEF5009003AC /* SplashPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
