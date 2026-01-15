@@ -7,44 +7,45 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MButton" customModule="grocery_app" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomSplashBtn" customModule="grocery_app" customModuleProvider="target">
             <connections>
-                <outlet property="btn" destination="XiF-bo-ggN" id="SkU-r1-A0i"/>
-                <outlet property="contentView" destination="Hnx-6x-UGW" id="Lr3-vO-Im9"/>
+                <outlet property="btn" destination="XiF-bo-ggN" id="rZX-Wg-dQr"/>
+                <outlet property="contentView" destination="Hnx-6x-UGW" id="W9l-QL-T43"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="UISuperView">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="SuperView">
             <rect key="frame" x="0.0" y="0.0" width="467" height="104"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hnx-6x-UGW" userLabel="UIContainerView">
-                    <rect key="frame" x="12" y="12" width="443" height="80"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hnx-6x-UGW" userLabel="containerView">
+                    <rect key="frame" x="0.0" y="0.0" width="467" height="104"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XiF-bo-ggN">
-                            <rect key="frame" x="0.0" y="0.0" width="443" height="80"/>
+                            <rect key="frame" x="0.0" y="0.0" width="467" height="104"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                            <connections>
-                                <action selector="btnDidTap:" destination="-1" eventType="touchUpInside" id="XrU-sS-98H"/>
-                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
+                        <constraint firstAttribute="trailing" secondItem="XiF-bo-ggN" secondAttribute="trailing" id="3HJ-m4-cbc"/>
                         <constraint firstItem="XiF-bo-ggN" firstAttribute="leading" secondItem="Hnx-6x-UGW" secondAttribute="leading" id="3eD-fo-C3a"/>
+                        <constraint firstItem="XiF-bo-ggN" firstAttribute="leading" secondItem="Hnx-6x-UGW" secondAttribute="leading" id="9vv-Qa-Gyo"/>
                         <constraint firstAttribute="bottom" secondItem="XiF-bo-ggN" secondAttribute="bottom" id="Kfj-kc-6hU"/>
+                        <constraint firstItem="XiF-bo-ggN" firstAttribute="top" secondItem="Hnx-6x-UGW" secondAttribute="top" id="Qxh-cy-3kZ"/>
                         <constraint firstItem="XiF-bo-ggN" firstAttribute="top" secondItem="Hnx-6x-UGW" secondAttribute="top" id="Z6H-sp-iNJ"/>
+                        <constraint firstAttribute="bottom" secondItem="XiF-bo-ggN" secondAttribute="bottom" id="u0U-Qq-30S"/>
                         <constraint firstAttribute="trailing" secondItem="XiF-bo-ggN" secondAttribute="trailing" id="vyO-zR-Fpv"/>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="Hnx-6x-UGW" secondAttribute="bottom" constant="12" id="1G7-tc-u2P"/>
-                <constraint firstItem="Hnx-6x-UGW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="beW-SM-g7g"/>
-                <constraint firstAttribute="trailing" secondItem="Hnx-6x-UGW" secondAttribute="trailing" constant="12" id="jiG-3a-McI"/>
-                <constraint firstItem="Hnx-6x-UGW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="lNd-hT-w3a"/>
+                <constraint firstItem="Hnx-6x-UGW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1qm-MQ-FBT"/>
+                <constraint firstAttribute="bottom" secondItem="Hnx-6x-UGW" secondAttribute="bottom" id="D2G-1i-YBt"/>
+                <constraint firstItem="Hnx-6x-UGW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="JiZ-nb-t0W"/>
+                <constraint firstAttribute="trailing" secondItem="Hnx-6x-UGW" secondAttribute="trailing" id="o2H-wU-Y7r"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="-43.511450381679388" y="-295.77464788732397"/>
