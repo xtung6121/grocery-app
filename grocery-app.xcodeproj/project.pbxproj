@@ -26,6 +26,7 @@
 		158A05CA2F1D38E3008C5F98 /* SplashData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158A05C92F1D38E3008C5F98 /* SplashData.swift */; };
 		158A05CC2F1E16DA008C5F98 /* SplashServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158A05CB2F1E16DA008C5F98 /* SplashServiceProtocol.swift */; };
 		15E5698A2F0E14A90068B865 /* ButtonSplashCustom.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15E569892F0E14A90068B865 /* ButtonSplashCustom.xib */; };
+		98BF3BC62F1E97CD00250919 /* SplashScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BF3BC52F1E97CD00250919 /* SplashScreen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		158A05C92F1D38E3008C5F98 /* SplashData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashData.swift; sourceTree = "<group>"; };
 		158A05CB2F1E16DA008C5F98 /* SplashServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashServiceProtocol.swift; sourceTree = "<group>"; };
 		15E569892F0E14A90068B865 /* ButtonSplashCustom.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonSplashCustom.xib; sourceTree = "<group>"; };
+		98BF3BC52F1E97CD00250919 /* SplashScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashScreen.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +101,6 @@
 			isa = PBXGroup;
 			children = (
 				158A05D02F1E2828008C5F98 /* Services */,
-				158A05CD2F1E17E9008C5F98 /* Controllers */,
 				153580332F1A58D200278D38 /* Models */,
 				154130BE2F0D5A9B0049340B /* Views */,
 				154130BA2F0D57F30049340B /* Utilities */,
@@ -113,16 +114,14 @@
 			path = "grocery-app";
 			sourceTree = "<group>";
 		};
-		154130B22F0D518D0049340B /* SplashViewController */ = {
+		154130B22F0D518D0049340B /* Introduce */ = {
 			isa = PBXGroup;
 			children = (
 				154130B72F0D53FD0049340B /* CustomView */,
-				15097E4A2F0FADCA0083F533 /* SplashDeliveryViewController.swift */,
-				15097E4C2F0FADDF0083F533 /* SplashDeliveryViewController.xib */,
-				151B0DDA2F14EEF5009003AC /* SplashPageViewController.swift */,
-				151B0DDC2F14EF19009003AC /* SplashPageViewController.xib */,
+				98BF3BC72F1E98DF00250919 /* Page */,
+				98BF3BC82F1E98EA00250919 /* Delivery */,
 			);
-			path = SplashViewController;
+			path = Introduce;
 			sourceTree = "<group>";
 		};
 		154130B72F0D53FD0049340B /* CustomView */ = {
@@ -155,9 +154,10 @@
 		154130BE2F0D5A9B0049340B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				98BF3BC42F1E97B000250919 /* SplashScreen */,
 				153580302F18CA6C00278D38 /* WelcomeToSignUpSignIn */,
 				155CF2982F1887FD00DE729A /* Home */,
-				154130B22F0D518D0049340B /* SplashViewController */,
+				154130B22F0D518D0049340B /* Introduce */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -170,13 +170,6 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		158A05CD2F1E17E9008C5F98 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
 		158A05D02F1E2828008C5F98 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +177,32 @@
 				153580362F1A592400278D38 /* SplashAPI.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		98BF3BC42F1E97B000250919 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				98BF3BC52F1E97CD00250919 /* SplashScreen.xib */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		98BF3BC72F1E98DF00250919 /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				151B0DDA2F14EEF5009003AC /* SplashPageViewController.swift */,
+				151B0DDC2F14EF19009003AC /* SplashPageViewController.xib */,
+			);
+			path = Page;
+			sourceTree = "<group>";
+		};
+		98BF3BC82F1E98EA00250919 /* Delivery */ = {
+			isa = PBXGroup;
+			children = (
+				15097E4A2F0FADCA0083F533 /* SplashDeliveryViewController.swift */,
+				15097E4C2F0FADDF0083F533 /* SplashDeliveryViewController.xib */,
+			);
+			path = Delivery;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +269,7 @@
 				15097E4D2F0FADDF0083F533 /* SplashDeliveryViewController.xib in Resources */,
 				15097E512F0FB2CC0083F533 /* CustomLbSplash.xib in Resources */,
 				154130A82F0D4D5E0049340B /* Assets.xcassets in Resources */,
+				98BF3BC62F1E97CD00250919 /* SplashScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
