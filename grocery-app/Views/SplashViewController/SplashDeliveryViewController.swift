@@ -44,7 +44,6 @@ class SplashDeliveryViewController: UIViewController {
     @IBOutlet weak var lbSplash: CustomLbSplash!
     @IBOutlet weak var skipBtn: UIButton!
     
-    
     private var state: DeliverySplashScreen = .buy {
         didSet {
             render()
@@ -54,13 +53,13 @@ class SplashDeliveryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-        
+        state = .buy
     }
     
     private func setupView() {
         overrideUserInterfaceStyle = .light
         view.backgroundColor = .systemBackground
-        imageView.image = UIImage(named: "DeliveryCuate")
+        
         skipBtn.setTitle("Skip", for: .normal)
         skipBtn.titleLabel?.font = .systemFont(ofSize: 12, weight: .thin)
         skipBtn.setTitleColor(.darkGray, for: .normal)
@@ -72,8 +71,7 @@ class SplashDeliveryViewController: UIViewController {
     
     private func render() {
         imageView.image = UIImage(named: state.imageName)
-        
-        lbSplash.config(title: state.title, subTitle: state.subTitle, numberOfLines: 2)
+        lbSplash.config(title: state.title, subTitle: state.subTitle, numberOfLines: state.index)
         
         pageControl.currentPage = state.index
         pageControl.numberOfPages = DeliverySplashScreen.allCases.count

@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+protocol UserServiceProtocol {
+    func getSplash(title: String, subTitle: String, image: String, completion: @escaping (_ result: SplashData?, _ error: NSError?) -> Void)
+}
+

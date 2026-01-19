@@ -11,7 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashDeliveryViewController" customModule="grocery_app" customModuleProvider="target">
             <connections>
                 <outlet property="imageView" destination="sAz-KQ-oMC" id="nOL-Zr-wDX"/>
-                <outlet property="lbSplash" destination="nX3-fk-F3u" id="ams-ED-M5y"/>
+                <outlet property="lbSplash" destination="nX3-fk-F3u" id="lZS-pU-wHi"/>
                 <outlet property="nextBtn" destination="04y-O8-LQ7" id="5Y0-uq-8Mg"/>
                 <outlet property="pageControl" destination="FQ8-Tr-UOW" id="jRq-jH-CH5"/>
                 <outlet property="skipBtn" destination="cvk-DA-Ywh" id="TYX-nD-9Sb"/>
@@ -44,13 +44,13 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Kg-8I-OTo" userLabel="viewLabel">
-                            <rect key="frame" x="0.0" y="575" width="430" height="120"/>
+                            <rect key="frame" x="0.0" y="575" width="430" height="130"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nX3-fk-F3u" customClass="CustomLbSplash" customModule="grocery_app" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="430" height="120"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="430" height="130"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="120" id="nst-8Z-Spl"/>
+                                        <constraint firstAttribute="height" constant="130" id="Y8n-KN-5fu"/>
                                     </constraints>
                                 </view>
                             </subviews>
@@ -63,7 +63,7 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QBP-Wy-w8n" userLabel="viewFooter">
-                            <rect key="frame" x="0.0" y="695" width="430" height="217"/>
+                            <rect key="frame" x="0.0" y="705" width="430" height="207"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gYS-73-NTm" userLabel="StackViewBtn">
                                     <rect key="frame" x="24" y="12" width="382" height="23"/>

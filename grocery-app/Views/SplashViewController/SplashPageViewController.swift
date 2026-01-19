@@ -1,83 +1,70 @@
 
 import UIKit
 
-enum SplashScreenType: CaseIterable {
-    case first
-    case second
-    case third
-    case welcome
-    
-    var title: String {
-        switch self {
-        case .first: return "Xin chao page 1"
-        case .second: return "page 2"
-        case .third: return "Let's Start"
-        case .welcome:
-            return "Let's start"
-        }
-    }
-    
-    var subtite: String {
-        switch self {
-        case .welcome:
-            return "hello"
-        default:
-            return "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy"
-        }
-    }
-    var index: Int {
-        Self.allCases.firstIndex(of: self) ?? 0
-    }
-    
-   
+enum SplashWithNoSkipButton {
+    case splashWithSkipButton
+    case splashNoSkipButton
 }
-
 class SplashPageViewController: UIViewController {
     
     @IBOutlet weak var customLbSplash: CustomLbSplash!
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var buttonDidTap: ButtonSplashCustom!
-    @IBOutlet weak var viewHeader: UIView!
+    @IBOutlet weak var splashTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var splashBottomConstraint: NSLayoutConstraint!
     
-    private var state: SplashScreenType = .first {
-        didSet {
-            render()
+    private var splashData: [SplashData] = []
+    private var currentIndex: Int = 0
+    
+    private func fetchData() {
+            Task { @MainActor in
+                do {
+                    let fetchedData: SplashDataRespone = try await NetworkService.shared.request(api: .getSplash, responseType: SplashDataRespone.self)
+                    self.splashData = fetchedData.items
+                } catch {
+                    print("err fetch data: ", error)
+                }
+            }
         }
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         overrideUserInterfaceStyle = .light
         view.backgroundColor = .systemBackground
-        render()
+        
+        fetchData()
         setupActionButtonDidTap()
+        
+        
     }
-    
+        
     private func render() {
+        guard currentIndex < splashData.count else { return }
+        
+        let items = splashData[currentIndex]
+        
         customLbSplash.config(
-            title: state.title,
-            subTitle: state.subtite,
-            numberOfLines: 2
+            title: items.title,
+            subTitle: items.description,
+            numberOfLines: 2, image: items.image
         )
         
-        pageControl.currentPage = state.index
-        pageControl.numberOfPages = SplashScreenType.allCases.count
-        
+        pageControl.currentPage = currentIndex
+        pageControl.numberOfPages = splashData.count
         
     }
     
+    
     private func setupActionButtonDidTap() {
-        buttonDidTap.buttonDidTap = {
-            let allScreens = SplashScreenType.allCases
-            let currentIndex = self.state.index
+        buttonDidTap.buttonDidTap = { [weak self] in
+                        guard let self else { return }
             
-            
-            if currentIndex < allScreens.count - 1 {
-                self.state = allScreens[currentIndex + 1]
-            }
-            
+                if self.currentIndex < self.splashData.count - 1 {
+                    self.currentIndex += 1
+                    self.render()
+                }
             else {
                 self.navigationController?.pushViewController(SplashDeliveryViewController(), animated: true)
                 }
