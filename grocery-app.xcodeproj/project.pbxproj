@@ -14,6 +14,8 @@
 		151B0DDB2F14EEF5009003AC /* SplashPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151B0DDA2F14EEF5009003AC /* SplashPageViewController.swift */; };
 		151B0DDD2F14EF19009003AC /* SplashPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 151B0DDC2F14EF19009003AC /* SplashPageViewController.xib */; };
 		153580322F18CA9C00278D38 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153580312F18CA9C00278D38 /* LoginViewController.swift */; };
+		153580352F1A58FA00278D38 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153580342F1A58FA00278D38 /* NetworkService.swift */; };
+		153580372F1A592400278D38 /* SplashAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153580362F1A592400278D38 /* SplashAPI.swift */; };
 		1541309F2F0D4D5B0049340B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1541309E2F0D4D5B0049340B /* AppDelegate.swift */; };
 		154130A12F0D4D5B0049340B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154130A02F0D4D5B0049340B /* SceneDelegate.swift */; };
 		154130A82F0D4D5E0049340B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 154130A72F0D4D5E0049340B /* Assets.xcassets */; };
@@ -21,7 +23,10 @@
 		154130B92F0D542A0049340B /* ButtonSplashCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154130B82F0D542A0049340B /* ButtonSplashCustom.swift */; };
 		154130BD2F0D585B0049340B /* ColorSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154130BC2F0D585B0049340B /* ColorSet.swift */; };
 		155CF29A2F18881200DE729A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155CF2992F18881200DE729A /* HomeViewController.swift */; };
+		158A05CA2F1D38E3008C5F98 /* SplashData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158A05C92F1D38E3008C5F98 /* SplashData.swift */; };
+		158A05CC2F1E16DA008C5F98 /* SplashServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158A05CB2F1E16DA008C5F98 /* SplashServiceProtocol.swift */; };
 		15E5698A2F0E14A90068B865 /* ButtonSplashCustom.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15E569892F0E14A90068B865 /* ButtonSplashCustom.xib */; };
+		98BF3BC62F1E97CD00250919 /* SplashScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BF3BC52F1E97CD00250919 /* SplashScreen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,8 @@
 		151B0DDA2F14EEF5009003AC /* SplashPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPageViewController.swift; sourceTree = "<group>"; };
 		151B0DDC2F14EF19009003AC /* SplashPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashPageViewController.xib; sourceTree = "<group>"; };
 		153580312F18CA9C00278D38 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		153580342F1A58FA00278D38 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		153580362F1A592400278D38 /* SplashAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashAPI.swift; sourceTree = "<group>"; };
 		1541309B2F0D4D5B0049340B /* grocery-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "grocery-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1541309E2F0D4D5B0049340B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		154130A02F0D4D5B0049340B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,7 +48,10 @@
 		154130B82F0D542A0049340B /* ButtonSplashCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSplashCustom.swift; sourceTree = "<group>"; };
 		154130BC2F0D585B0049340B /* ColorSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSet.swift; sourceTree = "<group>"; };
 		155CF2992F18881200DE729A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		158A05C92F1D38E3008C5F98 /* SplashData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashData.swift; sourceTree = "<group>"; };
+		158A05CB2F1E16DA008C5F98 /* SplashServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashServiceProtocol.swift; sourceTree = "<group>"; };
 		15E569892F0E14A90068B865 /* ButtonSplashCustom.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonSplashCustom.xib; sourceTree = "<group>"; };
+		98BF3BC52F1E97CD00250919 /* SplashScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashScreen.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,14 @@
 			path = WelcomeToSignUpSignIn;
 			sourceTree = "<group>";
 		};
+		153580332F1A58D200278D38 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				158A05C92F1D38E3008C5F98 /* SplashData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		154130922F0D4D5A0049340B = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +100,8 @@
 		1541309D2F0D4D5B0049340B /* grocery-app */ = {
 			isa = PBXGroup;
 			children = (
+				158A05D02F1E2828008C5F98 /* Services */,
+				153580332F1A58D200278D38 /* Models */,
 				154130BE2F0D5A9B0049340B /* Views */,
 				154130BA2F0D57F30049340B /* Utilities */,
 				1541309E2F0D4D5B0049340B /* AppDelegate.swift */,
@@ -89,20 +109,19 @@
 				154130A72F0D4D5E0049340B /* Assets.xcassets */,
 				154130A92F0D4D5E0049340B /* LaunchScreen.storyboard */,
 				154130AC2F0D4D5E0049340B /* Info.plist */,
+				158A05CB2F1E16DA008C5F98 /* SplashServiceProtocol.swift */,
 			);
 			path = "grocery-app";
 			sourceTree = "<group>";
 		};
-		154130B22F0D518D0049340B /* SplashViewController */ = {
+		154130B22F0D518D0049340B /* Introduce */ = {
 			isa = PBXGroup;
 			children = (
 				154130B72F0D53FD0049340B /* CustomView */,
-				15097E4A2F0FADCA0083F533 /* SplashDeliveryViewController.swift */,
-				15097E4C2F0FADDF0083F533 /* SplashDeliveryViewController.xib */,
-				151B0DDA2F14EEF5009003AC /* SplashPageViewController.swift */,
-				151B0DDC2F14EF19009003AC /* SplashPageViewController.xib */,
+				98BF3BC72F1E98DF00250919 /* Page */,
+				98BF3BC82F1E98EA00250919 /* Delivery */,
 			);
-			path = SplashViewController;
+			path = Introduce;
 			sourceTree = "<group>";
 		};
 		154130B72F0D53FD0049340B /* CustomView */ = {
@@ -135,9 +154,10 @@
 		154130BE2F0D5A9B0049340B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				98BF3BC42F1E97B000250919 /* SplashScreen */,
 				153580302F18CA6C00278D38 /* WelcomeToSignUpSignIn */,
 				155CF2982F1887FD00DE729A /* Home */,
-				154130B22F0D518D0049340B /* SplashViewController */,
+				154130B22F0D518D0049340B /* Introduce */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -148,6 +168,41 @@
 				155CF2992F18881200DE729A /* HomeViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		158A05D02F1E2828008C5F98 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				153580342F1A58FA00278D38 /* NetworkService.swift */,
+				153580362F1A592400278D38 /* SplashAPI.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		98BF3BC42F1E97B000250919 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				98BF3BC52F1E97CD00250919 /* SplashScreen.xib */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		98BF3BC72F1E98DF00250919 /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				151B0DDA2F14EEF5009003AC /* SplashPageViewController.swift */,
+				151B0DDC2F14EF19009003AC /* SplashPageViewController.xib */,
+			);
+			path = Page;
+			sourceTree = "<group>";
+		};
+		98BF3BC82F1E98EA00250919 /* Delivery */ = {
+			isa = PBXGroup;
+			children = (
+				15097E4A2F0FADCA0083F533 /* SplashDeliveryViewController.swift */,
+				15097E4C2F0FADDF0083F533 /* SplashDeliveryViewController.xib */,
+			);
+			path = Delivery;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +269,7 @@
 				15097E4D2F0FADDF0083F533 /* SplashDeliveryViewController.xib in Resources */,
 				15097E512F0FB2CC0083F533 /* CustomLbSplash.xib in Resources */,
 				154130A82F0D4D5E0049340B /* Assets.xcassets in Resources */,
+				98BF3BC62F1E97CD00250919 /* SplashScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,15 +280,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				153580352F1A58FA00278D38 /* NetworkService.swift in Sources */,
 				154130B92F0D542A0049340B /* ButtonSplashCustom.swift in Sources */,
 				15097E4B2F0FADCA0083F533 /* SplashDeliveryViewController.swift in Sources */,
+				158A05CC2F1E16DA008C5F98 /* SplashServiceProtocol.swift in Sources */,
 				1541309F2F0D4D5B0049340B /* AppDelegate.swift in Sources */,
 				155CF29A2F18881200DE729A /* HomeViewController.swift in Sources */,
 				15097E4F2F0FB2B30083F533 /* CustomLbSplash.swift in Sources */,
 				154130A12F0D4D5B0049340B /* SceneDelegate.swift in Sources */,
 				154130BD2F0D585B0049340B /* ColorSet.swift in Sources */,
+				158A05CA2F1D38E3008C5F98 /* SplashData.swift in Sources */,
 				153580322F18CA9C00278D38 /* LoginViewController.swift in Sources */,
 				151B0DDB2F14EEF5009003AC /* SplashPageViewController.swift in Sources */,
+				153580372F1A592400278D38 /* SplashAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
