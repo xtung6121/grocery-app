@@ -13,6 +13,7 @@ enum ColorSet: String {
     case primaryColor
     case primaryDarkColor
     case primaryButton
+    case forgotButton
     
     var color: UIColor {
         guard let color = UIColor(named: self.rawValue) else {

@@ -4,7 +4,6 @@ enum SplashAPI {
     static let baseURL = URL(string: "https://easy-node-backend-1.onrender.com")!
 
     case getSplash
-    case getAuth
 }
 
 extension SplashAPI {
@@ -12,8 +11,6 @@ extension SplashAPI {
         switch self {
         case .getSplash:
             return SplashAPI.baseURL.appendingPathComponent("/api/splash")
-        case .getAuth:
-            return SplashAPI.baseURL.appendingPathComponent("/api/auth/register")
         }
     }
 
@@ -21,8 +18,6 @@ extension SplashAPI {
         switch self {
         case .getSplash:
             return "GET"
-        case .getAuth:
-            return "GET"	
         }
     }
 

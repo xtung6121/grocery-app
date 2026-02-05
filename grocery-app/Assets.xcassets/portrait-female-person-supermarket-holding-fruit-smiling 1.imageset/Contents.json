@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "portrait-female-person-supermarket-holding-fruit-smiling 1.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "portrait-female-person-supermarket-holding-fruit-smiling 1 (1).png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "portrait-female-person-supermarket-holding-fruit-smiling 3.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
