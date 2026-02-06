@@ -17,7 +17,7 @@ class SplashDeliveryViewController: UIViewController {
     
     init(splashData: [SplashData]) {
         super.init(nibName: "SplashDeliveryViewController", bundle: .main)
-        self.splashData = splashData
+        self.splashData = splashData.filter{$0.type == .skippable}
     }
     
     required init?(coder: NSCoder) {
@@ -77,12 +77,12 @@ class SplashDeliveryViewController: UIViewController {
     
     
     @IBAction func skipBtnDidTap(_ sender: Any) {
-        self.navigationController?.pushViewController(LoginViewController(), animated: true)
+        self.navigationController?.pushViewController(WelcomeViewController(), animated: true)
     }
     
     @IBAction func nextBtnDidTap(_ sender: Any) {
         if isLastPage() {
-            navigationController?.pushViewController(LoginViewController(), animated: true)
+            navigationController?.pushViewController(WelcomeViewController(), animated: true)
         } else {
             currentIndex += 1
             setupPageDelivery()

@@ -60,6 +60,7 @@
                                             </constraints>
                                         </view>
                                     </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstItem="2du-9S-sv2" firstAttribute="leading" secondItem="Bbi-Bj-sjQ" secondAttribute="leading" constant="12" id="VoN-vU-h1d"/>
                                         <constraint firstAttribute="trailing" secondItem="2du-9S-sv2" secondAttribute="trailing" constant="12" id="xtW-qZ-dck"/>
@@ -87,7 +88,7 @@
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="Xh4-9I-VCl" secondAttribute="trailing" id="2Xk-2d-8dy"/>
                 <constraint firstItem="OuS-yR-iYW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="OV4-bX-btX"/>
@@ -102,9 +103,6 @@
         </view>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

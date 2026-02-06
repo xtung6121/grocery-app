@@ -15,10 +15,10 @@
                 <outlet property="buttonCreateAccount" destination="m6w-vl-tLX" id="ZIT-VN-Heh"/>
                 <outlet property="buttonLogin" destination="cei-hc-ha4" id="G5N-PD-C3D"/>
                 <outlet property="customLabel" destination="fj2-o9-7G0" id="AVU-yf-FB2"/>
+                <outlet property="goToLoginBtn" destination="ewh-wg-fOE" id="cAU-z3-EFp"/>
                 <outlet property="imageContainer" destination="CNB-4y-1VO" id="Ea0-qh-nGx"/>
                 <outlet property="imageView" destination="cnH-Lp-i0R" id="I51-r4-ttv"/>
                 <outlet property="labelQuestions" destination="ue3-Kc-cyN" id="Qlz-SQ-Ptv"/>
-                <outlet property="rightButtonGotoSignUp" destination="ewh-wg-fOE" id="2Fb-3Y-czT"/>
                 <outlet property="view" destination="xTk-PV-Ak5" id="9em-Kv-q2R"/>
             </connections>
         </placeholder>

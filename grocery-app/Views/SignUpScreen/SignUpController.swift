@@ -16,6 +16,7 @@ class SignUpController: UIViewController {
     @IBOutlet weak var labelQuestions: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.setNavigationBarHidden(false, animated: false) 
         setupTexts()
         setupButtons()
         setupBackgroundView()
@@ -24,16 +25,10 @@ class SignUpController: UIViewController {
     
     private func setupBackgroundView() {
         overrideUserInterfaceStyle = .light
-        let clearViews: [UIView] = [
-            backgroundWhite,
-            customLabel,
-            emailTextField,
-            passwordTextField,
-            backgroundViewBottom
-        ]
-        clearViews.forEach{$0.backgroundColor = .clear }
         imageContainer.image = UIImage(named: "woman-with-shopping-list-standing-by-fridge-supermarket-checking-cart 1")
         imageView.image = UIImage(named: "Rectangle 39")
+        imageView.contentMode = .scaleAspectFill
+        imageContainer.contentMode = .scaleAspectFill
     }
     
     private func setupButtons() {
@@ -66,5 +61,13 @@ class SignUpController: UIViewController {
         phoneTextField.placeholder = "Phone number"
         
     }
+    
+    private func didSignUp() {
+        let vc = LoginViewController()
+        self.navigationController?.popViewController(animated: true)
+    }
 
+    @IBAction func didTapButton(_ sender: Any) {
+        didSignUp()
+    }
 }

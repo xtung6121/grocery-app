@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -39,7 +38,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="338"/>
                                 </imageView>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="bottom" secondItem="d1F-6P-gUf" secondAttribute="bottom" id="4a2-QZ-XtA"/>
                                 <constraint firstItem="d1F-6P-gUf" firstAttribute="top" secondItem="YRm-Hi-gxl" secondAttribute="top" id="OiB-Ql-DBR"/>
@@ -58,28 +57,28 @@
                                     <subviews>
                                         <view contentMode="left" translatesAutoresizingMaskIntoConstraints="NO" id="p7f-K2-oKd" userLabel="customLabelView" customClass="CustomLabel" customModule="grocery_app" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="369" height="120"/>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="120" id="vf3-uW-Yq8"/>
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ff8-YC-TB0" userLabel="emailTextField" customClass="MTextField" customModule="grocery_app" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="125" width="369" height="60"/>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="60" id="tRB-94-yIB"/>
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y1z-yj-hDH" userLabel="phoneTextField" customClass="MTextField" customModule="grocery_app" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="190" width="369" height="60"/>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="60" id="9Uu-jy-THd"/>
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fuQ-lS-jdw" userLabel="passwordTextField" customClass="MTextField" customModule="grocery_app" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="255" width="369" height="60"/>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="60" id="ksu-UL-vkh"/>
                                             </constraints>
@@ -101,7 +100,7 @@
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gMh-4S-AWo" customClass="ButtonCustom" customModule="grocery_app" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="350" width="369" height="60"/>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="60" id="dQq-bX-kbk"/>
                                             </constraints>
@@ -122,11 +121,14 @@
                                                             <rect key="frame" x="41.333333333333343" y="0.0" width="84" height="34.333333333333336"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
+                                                            <connections>
+                                                                <action selector="didTapButton:" destination="-1" eventType="touchUpInside" id="zE6-FK-QFw"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                 </stackView>
                                             </subviews>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="qLh-DZ-A7y" firstAttribute="centerY" secondItem="lAZ-hd-lu4" secondAttribute="centerY" id="0ff-hv-4Is"/>
                                                 <constraint firstAttribute="height" constant="50" id="TwO-Fw-hUT"/>
@@ -143,7 +145,7 @@
                                     </subviews>
                                 </stackView>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="aza-P0-Ifc" secondAttribute="trailing" id="8ob-rq-2vz"/>
                                 <constraint firstItem="aza-P0-Ifc" firstAttribute="leading" secondItem="to0-IS-SSl" secondAttribute="leading" id="8s2-V6-TDE"/>
@@ -159,7 +161,7 @@
                 </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="saH-Rz-PWI"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="du0-xR-aCv" firstAttribute="top" secondItem="KlL-WZ-oj0" secondAttribute="top" id="1Yg-nu-NbC"/>
                 <constraint firstItem="du0-xR-aCv" firstAttribute="leading" secondItem="KlL-WZ-oj0" secondAttribute="leading" id="MEv-WF-h4E"/>
@@ -169,9 +171,4 @@
             <point key="canvasLocation" x="12.977099236641221" y="-32.394366197183103"/>
         </view>
     </objects>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

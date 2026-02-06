@@ -4,13 +4,9 @@ import UIKit
 
 class LoginViewController: UIViewController {
     @IBOutlet weak var imageContainer: UIImageView!
-    @IBOutlet weak var forgotPassView: UIView!
-    @IBOutlet weak var viewHeader: UIView!
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var backgroundWhite: UIView!
     @IBOutlet weak var emailTextField: MTextField!
     @IBOutlet weak var passwordTextField: MTextField!
-    @IBOutlet weak var ghostView: UIView!
     @IBOutlet weak var customLabel: CustomLabel!
     @IBOutlet weak var buttonLogin: ButtonCustom!
     @IBOutlet weak var rightButtonForgotPassword: UIButton!
@@ -27,19 +23,17 @@ class LoginViewController: UIViewController {
         setupUITextField()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+
+    
     private func setupBackgroundView() {
         overrideUserInterfaceStyle = .light
-        let clearViews: [UIView] = [
-            backgroundWhite,
-            viewHeader,
-            customLabel,
-            emailTextField,
-            passwordTextField,
-            forgotPassView,
-            backgroundViewBottom
-        ]
-        clearViews.forEach{$0.backgroundColor = .clear }
         imageContainer.image = UIImage(named: "portrait-female-person-supermarket-holding-fruit-smiling 1")
+        imageView.contentMode = .scaleAspectFill
+        imageContainer.contentMode = .scaleAspectFill
         imageView.image = UIImage(named: "Rectangle 39")
     }
     
@@ -59,7 +53,7 @@ class LoginViewController: UIViewController {
             titleNumberOfLines: 1,
             subTitleNumberOfLines: 1
         )
-
+        
         labelLeftCheck.text = "Remember me"
         labelLeftCheck.font = .systemFont(ofSize: 15, weight: .thin)
         rightButtonForgotPassword.setTitleColor(.blue, for: .normal)
@@ -76,8 +70,10 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func signUpDidTap(_ sender: Any) {
-        self.navigationController?.pushViewController(SignUpController(), animated: true)
+        let vc = SignUpController()
+        vc.navigationItem.largeTitleDisplayMode = .never
+        navigationController?.pushViewController(vc, animated: true)
     }
     
-
+    
 }

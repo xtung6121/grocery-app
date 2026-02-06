@@ -28,7 +28,6 @@ final class ButtonCustom: UIView {
         super.init(coder: coder)
         commonInit()
     }
-    
     private func commonInit() {
         loadNib()
         setupUI()
@@ -43,17 +42,15 @@ final class ButtonCustom: UIView {
         addSubview(contentView)
         contentView.frame = bounds
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        contentView.isUserInteractionEnabled = true
     }
     
     private func setupUI() {
-        let tap = UITapGestureRecognizer(target: self, action: #selector(didTap))
-        self.isUserInteractionEnabled = true
-        self.addGestureRecognizer(tap)
-        
-        subView.isUserInteractionEnabled = false
-        iconImageView.isUserInteractionEnabled = false
-        label.isUserInteractionEnabled = false
-        
+        let tap = UITapGestureRecognizer(
+            target: self,
+            action: #selector(didTap)
+        )
+        contentView.addGestureRecognizer(tap)
         layer.cornerRadius = 12
         clipsToBounds = true
         

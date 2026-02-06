@@ -33,7 +33,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="384" height="384"/>
                                 </imageView>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="bottom" secondItem="sAz-KQ-oMC" secondAttribute="bottom" id="JKb-te-SSN"/>
                                 <constraint firstAttribute="width" constant="384" id="NbQ-hQ-DQF"/>
@@ -54,7 +54,7 @@
                                     </constraints>
                                 </view>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="nX3-fk-F3u" firstAttribute="leading" secondItem="5Kg-8I-OTo" secondAttribute="leading" id="BXL-RC-n7u"/>
                                 <constraint firstAttribute="trailing" secondItem="nX3-fk-F3u" secondAttribute="trailing" id="Ghc-55-Fya"/>
@@ -95,7 +95,7 @@
                                     </constraints>
                                 </stackView>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="gYS-73-NTm" secondAttribute="trailing" constant="24" id="AJc-rh-dQc"/>
                                 <constraint firstItem="gYS-73-NTm" firstAttribute="top" secondItem="QBP-Wy-w8n" secondAttribute="top" constant="12" id="ASv-1q-LMl"/>
@@ -103,7 +103,7 @@
                             </constraints>
                         </view>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="QBP-Wy-w8n" secondAttribute="bottom" constant="20" id="30n-Zb-vUv"/>
                         <constraint firstItem="5Kg-8I-OTo" firstAttribute="leading" secondItem="YA1-iy-hzF" secondAttribute="leading" id="8Gz-zk-zUi"/>
@@ -118,7 +118,7 @@
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="tsT-f2-pT4"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="YA1-iy-hzF" firstAttribute="leading" secondItem="IUN-tj-VEo" secondAttribute="leading" id="Lhn-Ra-Oba"/>
                 <constraint firstItem="YA1-iy-hzF" firstAttribute="top" secondItem="IUN-tj-VEo" secondAttribute="top" id="XqH-3y-tbe"/>

@@ -22,6 +22,7 @@ class SplashPageViewController: UIViewController {
     @IBOutlet weak var buttonDidTap: ButtonCustom!
     
     private var splashData: [SplashData] = []
+    private var splashDataFiltered: [SplashData] = []
     private var canSkipAll: Bool = false
     private var currentIndex: Int = 0
     
@@ -47,7 +48,13 @@ class SplashPageViewController: UIViewController {
                     api: .getSplash,
                     responseType: SplashDataResponse.self
                 )
-                self.splashData = fetchedSplashData.items.sorted {$0.order < $1.order}
+                
+                self.splashData = fetchedSplashData.items
+                    .sorted {$0.order < $1.order}
+
+                self.splashDataFiltered = self.splashData
+                    .filter{ $0.type == .notSkippable}
+                
                 self.canSkipAll = fetchedSplashData.canSkipAll
                 self.updateSplashContent()
             } catch {
@@ -58,23 +65,23 @@ class SplashPageViewController: UIViewController {
     
     
     private func setupImage() {
-        imageView.image = UIImage(named: splashData[currentIndex].image)
+        imageView.image = UIImage(named: splashDataFiltered[currentIndex].image)
     }
     private func updateButtonState() {
         _ = currentIndex == splashData.count - 1
-//        buttonDidTap.setTitle("")
+        buttonDidTap.configure(with: IconTextButtonCustom.init(text: "Get Started",textColor: .white, image: nil, backgroundColor: ColorSet.primaryButton.color))
     }
     
     private func updateSplashContent() {
-        guard splashData.indices.contains(currentIndex) else { return }
+        guard splashDataFiltered.indices.contains(currentIndex) else { return }
         setupPageContent()
         setupImage()
     }
     
     private func setupPageContent() {
-        guard currentIndex < splashData.count else { return }
+        guard currentIndex < splashDataFiltered.count else { return }
         
-        let items = splashData[currentIndex]
+        let items = splashDataFiltered[currentIndex]
         
         customLbSplash.config(
             title: items.title,
@@ -84,13 +91,13 @@ class SplashPageViewController: UIViewController {
         )
         
         pageControl.currentPage = currentIndex
-        pageControl.numberOfPages = splashData.count
+        pageControl.numberOfPages = splashDataFiltered.count
     }
     
     private func setupActionButton() {
         buttonDidTap.onTap = { [weak self] in
             guard let self else { return }
-            let isReachMaxPage = !(self.currentIndex < self.splashData.count - 1)
+            let isReachMaxPage = !(self.currentIndex < self.splashDataFiltered.count - 1)
             if isReachMaxPage {
                 self.pushToDeliveryPage()
             }

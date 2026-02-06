@@ -27,16 +27,16 @@
                             <rect key="frame" x="12" y="12" width="369" height="250"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2i-w2-LSC">
-                                    <rect key="frame" x="0.0" y="0.0" width="369" height="38"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="38" id="4xU-UD-IQ6"/>
-                                    </constraints>
+                                    <rect key="frame" x="0.0" y="0.0" width="369" height="227.66666666666666"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9lZ-42-nWg">
-                                    <rect key="frame" x="0.0" y="40" width="369" height="210"/>
+                                    <rect key="frame" x="0.0" y="229.66666666666666" width="369" height="20.333333333333343"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20.329999999999998" id="sb8-h1-Qqq"/>
+                                    </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>

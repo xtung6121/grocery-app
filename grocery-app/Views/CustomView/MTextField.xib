@@ -22,25 +22,24 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQq-bj-4LF" userLabel="contentView">
-                    <rect key="frame" x="0.0" y="0.0" width="687" height="74"/>
+                    <rect key="frame" x="0.0" y="0.0" width="687" height="131"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fEa-13-ape">
-                            <rect key="frame" x="28" y="12" width="637" height="50"/>
+                            <rect key="frame" x="28" y="12" width="637" height="107"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oYp-V0-nIF">
-                                    <rect key="frame" x="0.0" y="0.0" width="23" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="23" height="107"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="23" id="9ba-FU-6sH"/>
-                                        <constraint firstAttribute="height" constant="17" id="jdP-sD-ztI"/>
                                     </constraints>
                                 </imageView>
                                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z6y-Qt-hKo">
-                                    <rect key="frame" x="43" y="0.0" width="523" height="50"/>
+                                    <rect key="frame" x="43" y="0.0" width="523" height="107"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVK-m4-60a">
-                                    <rect key="frame" x="586" y="0.0" width="51" height="50"/>
+                                    <rect key="frame" x="586" y="0.0" width="51" height="107"/>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="plain" image="Group 7"/>
                                     <connections>
