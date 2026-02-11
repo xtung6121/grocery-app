@@ -99,6 +99,9 @@
                                                             <rect key="frame" x="41.333333333333343" y="0.0" width="84" height="34.333333333333336"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
+                                                            <connections>
+                                                                <action selector="didTapSignIn:" destination="-1" eventType="touchUpInside" id="L4k-5W-Prz"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                 </stackView>

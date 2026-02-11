@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+
+struct RegisterResponse: Decodable {
+    let message: String
+}

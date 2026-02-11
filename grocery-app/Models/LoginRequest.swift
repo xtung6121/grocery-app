@@ -7,8 +7,10 @@
 
 import Foundation
 
-struct User: Codable {
+struct LoginRequest: Codable {
     let email: String
     let password: String
-    let phone: String
 }
+
+
+

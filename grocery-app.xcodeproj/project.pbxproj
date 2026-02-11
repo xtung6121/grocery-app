@@ -13,6 +13,11 @@
 		15097E512F0FB2CC0083F533 /* CustomLbSplash.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15097E502F0FB2CC0083F533 /* CustomLbSplash.xib */; };
 		151B0DDB2F14EEF5009003AC /* SplashPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151B0DDA2F14EEF5009003AC /* SplashPageViewController.swift */; };
 		151B0DDD2F14EF19009003AC /* SplashPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 151B0DDC2F14EF19009003AC /* SplashPageViewController.xib */; };
+		1522A3592F3CF2E100493540 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1522A3582F3CF2E100493540 /* LoginResponse.swift */; };
+		1522A35B2F3CF36A00493540 /* RegisterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1522A35A2F3CF36A00493540 /* RegisterResponse.swift */; };
+		1522A35F2F3D021600493540 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1522A35E2F3D021600493540 /* HomeViewController.xib */; };
+		1526AD442F379BE7000058F9 /* AuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1526AD432F379BE7000058F9 /* AuthAPI.swift */; };
+		1526AD4A2F37A519000058F9 /* AuthCoordinatior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1526AD492F37A519000058F9 /* AuthCoordinatior.swift */; };
 		153580322F18CA9C00278D38 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153580312F18CA9C00278D38 /* LoginViewController.swift */; };
 		153580352F1A58FA00278D38 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153580342F1A58FA00278D38 /* NetworkService.swift */; };
 		153580372F1A592400278D38 /* SplashAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153580362F1A592400278D38 /* SplashAPI.swift */; };
@@ -25,9 +30,11 @@
 		154B33D62F30E228005A3BF2 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154B33D52F30E228005A3BF2 /* SignUpController.swift */; };
 		154B33D82F30E235005A3BF2 /* SignUpController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 154B33D72F30E235005A3BF2 /* SignUpController.xib */; };
 		155CF29A2F18881200DE729A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155CF2992F18881200DE729A /* HomeViewController.swift */; };
+		157AF07B2F373B1100CEDC8C /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157AF07A2F373B1100CEDC8C /* LoginRequest.swift */; };
 		158A05CA2F1D38E3008C5F98 /* SplashData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158A05C92F1D38E3008C5F98 /* SplashData.swift */; };
 		1593DCFF2F30F1C00005B370 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1593DCFE2F30F1C00005B370 /* WelcomeViewController.swift */; };
 		1593DD012F30F1E10005B370 /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1593DD002F30F1E10005B370 /* WelcomeViewController.xib */; };
+		159D69B32F3A3D290059B32C /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159D69B22F3A3D290059B32C /* RegisterRequest.swift */; };
 		15BDA6E82F3476A600BB64DD /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BDA6E72F3476A600BB64DD /* CustomLabel.swift */; };
 		15BDA6EA2F3476B900BB64DD /* CustomLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15BDA6E92F3476B900BB64DD /* CustomLabel.xib */; };
 		15BDA6ED2F347EDA00BB64DD /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15BDA6EC2F347EDA00BB64DD /* Poppins-Bold.ttf */; };
@@ -49,6 +56,11 @@
 		15097E502F0FB2CC0083F533 /* CustomLbSplash.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomLbSplash.xib; sourceTree = "<group>"; };
 		151B0DDA2F14EEF5009003AC /* SplashPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPageViewController.swift; sourceTree = "<group>"; };
 		151B0DDC2F14EF19009003AC /* SplashPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashPageViewController.xib; sourceTree = "<group>"; };
+		1522A3582F3CF2E100493540 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		1522A35A2F3CF36A00493540 /* RegisterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResponse.swift; sourceTree = "<group>"; };
+		1522A35E2F3D021600493540 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		1526AD432F379BE7000058F9 /* AuthAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPI.swift; sourceTree = "<group>"; };
+		1526AD492F37A519000058F9 /* AuthCoordinatior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinatior.swift; sourceTree = "<group>"; };
 		153580312F18CA9C00278D38 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		153580342F1A58FA00278D38 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		153580362F1A592400278D38 /* SplashAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashAPI.swift; sourceTree = "<group>"; };
@@ -63,9 +75,11 @@
 		154B33D52F30E228005A3BF2 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		154B33D72F30E235005A3BF2 /* SignUpController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpController.xib; sourceTree = "<group>"; };
 		155CF2992F18881200DE729A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		157AF07A2F373B1100CEDC8C /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		158A05C92F1D38E3008C5F98 /* SplashData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashData.swift; sourceTree = "<group>"; };
 		1593DCFE2F30F1C00005B370 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		1593DD002F30F1E10005B370 /* WelcomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
+		159D69B22F3A3D290059B32C /* RegisterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequest.swift; sourceTree = "<group>"; };
 		15BDA6E72F3476A600BB64DD /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		15BDA6E92F3476B900BB64DD /* CustomLabel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomLabel.xib; sourceTree = "<group>"; };
 		15BDA6EC2F347EDA00BB64DD /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
@@ -91,6 +105,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1526AD452F37A41E000058F9 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				1526AD462F37A431000058F9 /* Coordinator */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		1526AD462F37A431000058F9 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				1526AD492F37A519000058F9 /* AuthCoordinatior.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		153580302F18CA6C00278D38 /* WelcomeScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +134,10 @@
 			isa = PBXGroup;
 			children = (
 				158A05C92F1D38E3008C5F98 /* SplashData.swift */,
+				157AF07A2F373B1100CEDC8C /* LoginRequest.swift */,
+				159D69B22F3A3D290059B32C /* RegisterRequest.swift */,
+				1522A3582F3CF2E100493540 /* LoginResponse.swift */,
+				1522A35A2F3CF36A00493540 /* RegisterResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -127,6 +161,7 @@
 		1541309D2F0D4D5B0049340B /* grocery-app */ = {
 			isa = PBXGroup;
 			children = (
+				1526AD452F37A41E000058F9 /* Auth */,
 				15BDA6EB2F347CFA00BB64DD /* Fonts */,
 				158A05D02F1E2828008C5F98 /* Services */,
 				153580332F1A58D200278D38 /* Models */,
@@ -195,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				155CF2992F18881200DE729A /* HomeViewController.swift */,
+				1522A35E2F3D021600493540 /* HomeViewController.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -204,6 +240,7 @@
 			children = (
 				153580342F1A58FA00278D38 /* NetworkService.swift */,
 				153580362F1A592400278D38 /* SplashAPI.swift */,
+				1526AD432F379BE7000058F9 /* AuthAPI.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -349,6 +386,7 @@
 				154130A82F0D4D5E0049340B /* Assets.xcassets in Resources */,
 				98BF3BC62F1E97CD00250919 /* SplashScreen.xib in Resources */,
 				154B33D82F30E235005A3BF2 /* SignUpController.xib in Resources */,
+				1522A35F2F3D021600493540 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,12 +409,18 @@
 				15BDA6E82F3476A600BB64DD /* CustomLabel.swift in Sources */,
 				155CF29A2F18881200DE729A /* HomeViewController.swift in Sources */,
 				15097E4F2F0FB2B30083F533 /* CustomLbSplash.swift in Sources */,
+				159D69B32F3A3D290059B32C /* RegisterRequest.swift in Sources */,
+				1522A35B2F3CF36A00493540 /* RegisterResponse.swift in Sources */,
 				154130A12F0D4D5B0049340B /* SceneDelegate.swift in Sources */,
+				1522A3592F3CF2E100493540 /* LoginResponse.swift in Sources */,
 				154130BD2F0D585B0049340B /* ColorSet.swift in Sources */,
 				158A05CA2F1D38E3008C5F98 /* SplashData.swift in Sources */,
 				153580322F18CA9C00278D38 /* LoginViewController.swift in Sources */,
+				1526AD4A2F37A519000058F9 /* AuthCoordinatior.swift in Sources */,
+				1526AD442F379BE7000058F9 /* AuthAPI.swift in Sources */,
 				151B0DDB2F14EEF5009003AC /* SplashPageViewController.swift in Sources */,
 				153580372F1A592400278D38 /* SplashAPI.swift in Sources */,
+				157AF07B2F373B1100CEDC8C /* LoginRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
