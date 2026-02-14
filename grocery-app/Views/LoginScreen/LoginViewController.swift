@@ -2,6 +2,7 @@
 
 import UIKit
 
+@MainActor
 class LoginViewController: UIViewController {
     @IBOutlet weak var imageContainer: UIImageView!
     @IBOutlet weak var imageView: UIImageView!
@@ -15,19 +16,20 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var rightButtonGotoSignUp: UIButton!
     @IBOutlet weak var backgroundViewBottom: UIView!
     @IBOutlet weak var labelQuestions: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTexts()
         setupButtons()
         setupBackgroundView()
         setupUITextField()
+        setupLoginButtonAction()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(false, animated: false)
     }
-
     
     private func setupBackgroundView() {
         overrideUserInterfaceStyle = .light
@@ -39,11 +41,15 @@ class LoginViewController: UIViewController {
     
     private func setupButtons() {
         buttonLogin.configure(with: IconTextButtonCustom.init(text: "Login",textColor: .white, image: nil, backgroundColor: ColorSet.primaryButton.color))
-        
         rightButtonForgotPassword.setTitle("Forgot password", for: .normal)
         rightButtonForgotPassword.setTitleColor(ColorSet.forgotButton.color, for: .normal)
-        
+        rightButtonForgotPassword.titleLabel?.font = .boldSystemFont(ofSize: 15)
         rightButtonGotoSignUp.setTitleColor(.black, for: .normal)
+    }
+    
+    private func setupLoginButtonAction() {
+        buttonLogin.onTap = { [weak self ] in
+            self?.didTapButtonLogin()}
     }
     
     private func setupTexts() {
@@ -53,11 +59,8 @@ class LoginViewController: UIViewController {
             titleNumberOfLines: 1,
             subTitleNumberOfLines: 1
         )
-        
         labelLeftCheck.text = "Remember me"
         labelLeftCheck.font = .systemFont(ofSize: 15, weight: .thin)
-        rightButtonForgotPassword.setTitleColor(.blue, for: .normal)
-        rightButtonForgotPassword.titleLabel?.font = .boldSystemFont(ofSize: 15)
         labelQuestions.text = "Don't have an account?"
         labelQuestions.font = .thin(size: 15)
     }
@@ -69,11 +72,47 @@ class LoginViewController: UIViewController {
         passwordTextField.placeholder = "**********"
     }
     
+    // API Endpoint
+    // Response model
+    // Bussiness flow
+    private func didTapButtonLogin() {
+        
+        guard let email = emailTextField.text,
+              let password = passwordTextField.text,
+              !email.isEmpty,
+              password.count >= 6 else {
+            print("invalid input ->> email or password too short")
+            return
+        }
+        
+        let requestBody = LoginRequest(email: email, password: password)
+        Task {
+            do {
+                let response: LoginResponse = try await
+                NetworkService.shared.request(
+                    api: AuthAPI.postLogin(body: requestBody),
+                    responseType: LoginResponse.self
+                )
+                await handleSuccessfulLogin(response)
+            } catch {
+                await handleLoginError(error)
+            }
+        }
+    }
+    
+    private func handleSuccessfulLogin(_ response: LoginResponse) async {
+        print("Login successfully: \(response)")
+        let vc = HomeViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    private func handleLoginError(_ error: Error) async {
+        print("Login failed: \(error.localizedDescription)")
+    }
+    
     @IBAction func signUpDidTap(_ sender: Any) {
         let vc = SignUpController()
         vc.navigationItem.largeTitleDisplayMode = .never
         navigationController?.pushViewController(vc, animated: true)
     }
-    
-    
 }

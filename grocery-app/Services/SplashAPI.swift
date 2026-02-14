@@ -1,12 +1,19 @@
 import Foundation
 
+protocol APIEndpoint {
+    var url: URL { get }
+    var method: String { get }
+    var headers: [String: String] { get }
+    var body: Data? { get }
+}
+
 enum SplashAPI {
     static let baseURL = URL(string: "https://easy-node-backend-1.onrender.com")!
 
     case getSplash
 }
 
-extension SplashAPI {
+extension SplashAPI: APIEndpoint {
     var url: URL {
         switch self {
         case .getSplash:
@@ -25,5 +32,9 @@ extension SplashAPI {
         [
             "Accept": "application/json"
         ]
+    }
+    
+    var body: Data? {
+        nil
     }
 }

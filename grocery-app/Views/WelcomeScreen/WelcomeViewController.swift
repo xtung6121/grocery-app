@@ -71,5 +71,9 @@ class WelcomeViewController: UIViewController {
         buttonCreateAccount.onTap = {
             self.navigationController?.pushViewController(SignUpController(), animated: true)
         }
+        
+    }
+    @IBAction func didTapSignIn(_ sender: Any) {
+        gotoSignIn()
     }
 }

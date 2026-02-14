@@ -12,7 +12,6 @@ struct SplashDataResponse: Decodable {
     let items: [SplashData]
 }
 
-
 struct SplashData: Decodable {
     let id: String
     let title: String

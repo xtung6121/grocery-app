@@ -45,7 +45,7 @@ class SplashPageViewController: UIViewController {
             do {
                 let fetchedSplashData: SplashDataResponse = try await
                 NetworkService.shared.request(
-                    api: .getSplash,
+                    api: SplashAPI.getSplash,
                     responseType: SplashDataResponse.self
                 )
                 

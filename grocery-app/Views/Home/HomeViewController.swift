@@ -14,10 +14,14 @@ class HomeViewController: UIViewController {
         setupUI()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
     private func setupUI(){
         overrideUserInterfaceStyle = .light
         view.backgroundColor = .systemBackground
         view.largeContentTitle = "Home"
-
     }
 }
