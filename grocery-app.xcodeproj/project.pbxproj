@@ -47,6 +47,8 @@
 		15F55B262F2BBF0D00783F90 /* LoadingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F55B252F2BBF0D00783F90 /* LoadingManager.swift */; };
 		15FF90232F27C7C200D87624 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15FF90222F27C7C200D87624 /* LoginViewController.xib */; };
 		98BF3BC62F1E97CD00250919 /* SplashScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BF3BC52F1E97CD00250919 /* SplashScreen.xib */; };
+		98E0BE352F35075C00C6F849 /* ForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98E0BE342F35075C00C6F849 /* ForgotPasswordViewController.xib */; };
+		98E0BE362F35075C00C6F849 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E0BE332F35075C00C6F849 /* ForgotPasswordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +94,8 @@
 		15F55B252F2BBF0D00783F90 /* LoadingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingManager.swift; sourceTree = "<group>"; };
 		15FF90222F27C7C200D87624 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		98BF3BC52F1E97CD00250919 /* SplashScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashScreen.xib; sourceTree = "<group>"; };
+		98E0BE332F35075C00C6F849 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		98E0BE342F35075C00C6F849 /* ForgotPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +209,7 @@
 		154130BE2F0D5A9B0049340B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				98E0BE322F35074200C6F849 /* ForgotPassword */,
 				154B33D42F30E1D7005A3BF2 /* SignUpScreen */,
 				15FF90242F29258200D87624 /* CustomView */,
 				15F55B242F2BBEF300783F90 /* Common */,
@@ -313,6 +318,15 @@
 			path = Delivery;
 			sourceTree = "<group>";
 		};
+		98E0BE322F35074200C6F849 /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				98E0BE332F35075C00C6F849 /* ForgotPasswordViewController.swift */,
+				98E0BE342F35075C00C6F849 /* ForgotPasswordViewController.xib */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -378,6 +392,7 @@
 				15E73F532F2F4C9400644E9C /* MTextField.xib in Resources */,
 				15E5698A2F0E14A90068B865 /* ButtonCustom.xib in Resources */,
 				1593DD012F30F1E10005B370 /* WelcomeViewController.xib in Resources */,
+				98E0BE352F35075C00C6F849 /* ForgotPasswordViewController.xib in Resources */,
 				15097E4D2F0FADDF0083F533 /* SplashDeliveryViewController.xib in Resources */,
 				15BDA6ED2F347EDA00BB64DD /* Poppins-Bold.ttf in Resources */,
 				15BDA6F12F347EFA00BB64DD /* Poppins-Thin.ttf in Resources */,
@@ -414,6 +429,7 @@
 				154130A12F0D4D5B0049340B /* SceneDelegate.swift in Sources */,
 				1522A3592F3CF2E100493540 /* LoginResponse.swift in Sources */,
 				154130BD2F0D585B0049340B /* ColorSet.swift in Sources */,
+				98E0BE362F35075C00C6F849 /* ForgotPasswordViewController.swift in Sources */,
 				158A05CA2F1D38E3008C5F98 /* SplashData.swift in Sources */,
 				153580322F18CA9C00278D38 /* LoginViewController.swift in Sources */,
 				1526AD4A2F37A519000058F9 /* AuthCoordinatior.swift in Sources */,
