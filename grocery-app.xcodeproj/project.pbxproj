@@ -13,6 +13,11 @@
 		15097E512F0FB2CC0083F533 /* CustomLbSplash.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15097E502F0FB2CC0083F533 /* CustomLbSplash.xib */; };
 		151B0DDB2F14EEF5009003AC /* SplashPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151B0DDA2F14EEF5009003AC /* SplashPageViewController.swift */; };
 		151B0DDD2F14EF19009003AC /* SplashPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 151B0DDC2F14EF19009003AC /* SplashPageViewController.xib */; };
+		1522A3592F3CF2E100493540 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1522A3582F3CF2E100493540 /* LoginResponse.swift */; };
+		1522A35B2F3CF36A00493540 /* RegisterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1522A35A2F3CF36A00493540 /* RegisterResponse.swift */; };
+		1522A35F2F3D021600493540 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1522A35E2F3D021600493540 /* HomeViewController.xib */; };
+		1526AD442F379BE7000058F9 /* AuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1526AD432F379BE7000058F9 /* AuthAPI.swift */; };
+		1526AD4A2F37A519000058F9 /* AuthCoordinatior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1526AD492F37A519000058F9 /* AuthCoordinatior.swift */; };
 		153580322F18CA9C00278D38 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153580312F18CA9C00278D38 /* LoginViewController.swift */; };
 		153580352F1A58FA00278D38 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153580342F1A58FA00278D38 /* NetworkService.swift */; };
 		153580372F1A592400278D38 /* SplashAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153580362F1A592400278D38 /* SplashAPI.swift */; };
@@ -20,12 +25,27 @@
 		154130A12F0D4D5B0049340B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154130A02F0D4D5B0049340B /* SceneDelegate.swift */; };
 		154130A82F0D4D5E0049340B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 154130A72F0D4D5E0049340B /* Assets.xcassets */; };
 		154130AB2F0D4D5E0049340B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 154130A92F0D4D5E0049340B /* LaunchScreen.storyboard */; };
-		154130B92F0D542A0049340B /* ButtonSplashCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154130B82F0D542A0049340B /* ButtonSplashCustom.swift */; };
+		154130B92F0D542A0049340B /* ButtonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154130B82F0D542A0049340B /* ButtonCustom.swift */; };
 		154130BD2F0D585B0049340B /* ColorSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154130BC2F0D585B0049340B /* ColorSet.swift */; };
+		154B33D62F30E228005A3BF2 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154B33D52F30E228005A3BF2 /* SignUpController.swift */; };
+		154B33D82F30E235005A3BF2 /* SignUpController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 154B33D72F30E235005A3BF2 /* SignUpController.xib */; };
 		155CF29A2F18881200DE729A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155CF2992F18881200DE729A /* HomeViewController.swift */; };
+		157AF07B2F373B1100CEDC8C /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157AF07A2F373B1100CEDC8C /* LoginRequest.swift */; };
 		158A05CA2F1D38E3008C5F98 /* SplashData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158A05C92F1D38E3008C5F98 /* SplashData.swift */; };
-		158A05CC2F1E16DA008C5F98 /* SplashServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158A05CB2F1E16DA008C5F98 /* SplashServiceProtocol.swift */; };
-		15E5698A2F0E14A90068B865 /* ButtonSplashCustom.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15E569892F0E14A90068B865 /* ButtonSplashCustom.xib */; };
+		1593DCFF2F30F1C00005B370 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1593DCFE2F30F1C00005B370 /* WelcomeViewController.swift */; };
+		1593DD012F30F1E10005B370 /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1593DD002F30F1E10005B370 /* WelcomeViewController.xib */; };
+		159D69B32F3A3D290059B32C /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159D69B22F3A3D290059B32C /* RegisterRequest.swift */; };
+		15BDA6E82F3476A600BB64DD /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BDA6E72F3476A600BB64DD /* CustomLabel.swift */; };
+		15BDA6EA2F3476B900BB64DD /* CustomLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15BDA6E92F3476B900BB64DD /* CustomLabel.xib */; };
+		15BDA6ED2F347EDA00BB64DD /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15BDA6EC2F347EDA00BB64DD /* Poppins-Bold.ttf */; };
+		15BDA6EF2F347EED00BB64DD /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15BDA6EE2F347EED00BB64DD /* Poppins-Regular.ttf */; };
+		15BDA6F12F347EFA00BB64DD /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15BDA6F02F347EFA00BB64DD /* Poppins-Thin.ttf */; };
+		15BDA6F32F347FE600BB64DD /* FontStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BDA6F22F347FE600BB64DD /* FontStyles.swift */; };
+		15E5698A2F0E14A90068B865 /* ButtonCustom.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15E569892F0E14A90068B865 /* ButtonCustom.xib */; };
+		15E73F532F2F4C9400644E9C /* MTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15E73F522F2F4C9400644E9C /* MTextField.xib */; };
+		15E73F552F2F4C9E00644E9C /* MTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E73F542F2F4C9E00644E9C /* MTextField.swift */; };
+		15F55B262F2BBF0D00783F90 /* LoadingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F55B252F2BBF0D00783F90 /* LoadingManager.swift */; };
+		15FF90232F27C7C200D87624 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15FF90222F27C7C200D87624 /* LoginViewController.xib */; };
 		98BF3BC62F1E97CD00250919 /* SplashScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BF3BC52F1E97CD00250919 /* SplashScreen.xib */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +56,11 @@
 		15097E502F0FB2CC0083F533 /* CustomLbSplash.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomLbSplash.xib; sourceTree = "<group>"; };
 		151B0DDA2F14EEF5009003AC /* SplashPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPageViewController.swift; sourceTree = "<group>"; };
 		151B0DDC2F14EF19009003AC /* SplashPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashPageViewController.xib; sourceTree = "<group>"; };
+		1522A3582F3CF2E100493540 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		1522A35A2F3CF36A00493540 /* RegisterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResponse.swift; sourceTree = "<group>"; };
+		1522A35E2F3D021600493540 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		1526AD432F379BE7000058F9 /* AuthAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPI.swift; sourceTree = "<group>"; };
+		1526AD492F37A519000058F9 /* AuthCoordinatior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinatior.swift; sourceTree = "<group>"; };
 		153580312F18CA9C00278D38 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		153580342F1A58FA00278D38 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		153580362F1A592400278D38 /* SplashAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashAPI.swift; sourceTree = "<group>"; };
@@ -45,12 +70,27 @@
 		154130A72F0D4D5E0049340B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		154130AA2F0D4D5E0049340B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		154130AC2F0D4D5E0049340B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		154130B82F0D542A0049340B /* ButtonSplashCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSplashCustom.swift; sourceTree = "<group>"; };
+		154130B82F0D542A0049340B /* ButtonCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCustom.swift; sourceTree = "<group>"; };
 		154130BC2F0D585B0049340B /* ColorSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSet.swift; sourceTree = "<group>"; };
+		154B33D52F30E228005A3BF2 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		154B33D72F30E235005A3BF2 /* SignUpController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpController.xib; sourceTree = "<group>"; };
 		155CF2992F18881200DE729A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		157AF07A2F373B1100CEDC8C /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		158A05C92F1D38E3008C5F98 /* SplashData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashData.swift; sourceTree = "<group>"; };
-		158A05CB2F1E16DA008C5F98 /* SplashServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashServiceProtocol.swift; sourceTree = "<group>"; };
-		15E569892F0E14A90068B865 /* ButtonSplashCustom.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonSplashCustom.xib; sourceTree = "<group>"; };
+		1593DCFE2F30F1C00005B370 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		1593DD002F30F1E10005B370 /* WelcomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
+		159D69B22F3A3D290059B32C /* RegisterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequest.swift; sourceTree = "<group>"; };
+		15BDA6E72F3476A600BB64DD /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		15BDA6E92F3476B900BB64DD /* CustomLabel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomLabel.xib; sourceTree = "<group>"; };
+		15BDA6EC2F347EDA00BB64DD /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		15BDA6EE2F347EED00BB64DD /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		15BDA6F02F347EFA00BB64DD /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		15BDA6F22F347FE600BB64DD /* FontStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyles.swift; sourceTree = "<group>"; };
+		15E569892F0E14A90068B865 /* ButtonCustom.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonCustom.xib; sourceTree = "<group>"; };
+		15E73F522F2F4C9400644E9C /* MTextField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTextField.xib; sourceTree = "<group>"; };
+		15E73F542F2F4C9E00644E9C /* MTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTextField.swift; sourceTree = "<group>"; };
+		15F55B252F2BBF0D00783F90 /* LoadingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingManager.swift; sourceTree = "<group>"; };
+		15FF90222F27C7C200D87624 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		98BF3BC52F1E97CD00250919 /* SplashScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashScreen.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,18 +105,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		153580302F18CA6C00278D38 /* WelcomeToSignUpSignIn */ = {
+		1526AD452F37A41E000058F9 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				153580312F18CA9C00278D38 /* LoginViewController.swift */,
+				1526AD462F37A431000058F9 /* Coordinator */,
 			);
-			path = WelcomeToSignUpSignIn;
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		1526AD462F37A431000058F9 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				1526AD492F37A519000058F9 /* AuthCoordinatior.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		153580302F18CA6C00278D38 /* WelcomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1593DCFE2F30F1C00005B370 /* WelcomeViewController.swift */,
+				1593DD002F30F1E10005B370 /* WelcomeViewController.xib */,
+			);
+			path = WelcomeScreen;
 			sourceTree = "<group>";
 		};
 		153580332F1A58D200278D38 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				158A05C92F1D38E3008C5F98 /* SplashData.swift */,
+				157AF07A2F373B1100CEDC8C /* LoginRequest.swift */,
+				159D69B22F3A3D290059B32C /* RegisterRequest.swift */,
+				1522A3582F3CF2E100493540 /* LoginResponse.swift */,
+				1522A35A2F3CF36A00493540 /* RegisterResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -100,6 +161,8 @@
 		1541309D2F0D4D5B0049340B /* grocery-app */ = {
 			isa = PBXGroup;
 			children = (
+				1526AD452F37A41E000058F9 /* Auth */,
+				15BDA6EB2F347CFA00BB64DD /* Fonts */,
 				158A05D02F1E2828008C5F98 /* Services */,
 				153580332F1A58D200278D38 /* Models */,
 				154130BE2F0D5A9B0049340B /* Views */,
@@ -109,7 +172,7 @@
 				154130A72F0D4D5E0049340B /* Assets.xcassets */,
 				154130A92F0D4D5E0049340B /* LaunchScreen.storyboard */,
 				154130AC2F0D4D5E0049340B /* Info.plist */,
-				158A05CB2F1E16DA008C5F98 /* SplashServiceProtocol.swift */,
+				15BDA6F22F347FE600BB64DD /* FontStyles.swift */,
 			);
 			path = "grocery-app";
 			sourceTree = "<group>";
@@ -117,22 +180,10 @@
 		154130B22F0D518D0049340B /* Introduce */ = {
 			isa = PBXGroup;
 			children = (
-				154130B72F0D53FD0049340B /* CustomView */,
 				98BF3BC72F1E98DF00250919 /* Page */,
 				98BF3BC82F1E98EA00250919 /* Delivery */,
 			);
 			path = Introduce;
-			sourceTree = "<group>";
-		};
-		154130B72F0D53FD0049340B /* CustomView */ = {
-			isa = PBXGroup;
-			children = (
-				154130B82F0D542A0049340B /* ButtonSplashCustom.swift */,
-				15E569892F0E14A90068B865 /* ButtonSplashCustom.xib */,
-				15097E4E2F0FB2B30083F533 /* CustomLbSplash.swift */,
-				15097E502F0FB2CC0083F533 /* CustomLbSplash.xib */,
-			);
-			path = CustomView;
 			sourceTree = "<group>";
 		};
 		154130BA2F0D57F30049340B /* Utilities */ = {
@@ -154,18 +205,32 @@
 		154130BE2F0D5A9B0049340B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				154B33D42F30E1D7005A3BF2 /* SignUpScreen */,
+				15FF90242F29258200D87624 /* CustomView */,
+				15F55B242F2BBEF300783F90 /* Common */,
+				15F55B232F2BBECB00783F90 /* LoginScreen */,
 				98BF3BC42F1E97B000250919 /* SplashScreen */,
-				153580302F18CA6C00278D38 /* WelcomeToSignUpSignIn */,
+				153580302F18CA6C00278D38 /* WelcomeScreen */,
 				155CF2982F1887FD00DE729A /* Home */,
 				154130B22F0D518D0049340B /* Introduce */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
+		154B33D42F30E1D7005A3BF2 /* SignUpScreen */ = {
+			isa = PBXGroup;
+			children = (
+				154B33D52F30E228005A3BF2 /* SignUpController.swift */,
+				154B33D72F30E235005A3BF2 /* SignUpController.xib */,
+			);
+			path = SignUpScreen;
+			sourceTree = "<group>";
+		};
 		155CF2982F1887FD00DE729A /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				155CF2992F18881200DE729A /* HomeViewController.swift */,
+				1522A35E2F3D021600493540 /* HomeViewController.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -175,8 +240,51 @@
 			children = (
 				153580342F1A58FA00278D38 /* NetworkService.swift */,
 				153580362F1A592400278D38 /* SplashAPI.swift */,
+				1526AD432F379BE7000058F9 /* AuthAPI.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		15BDA6EB2F347CFA00BB64DD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				15BDA6EC2F347EDA00BB64DD /* Poppins-Bold.ttf */,
+				15BDA6EE2F347EED00BB64DD /* Poppins-Regular.ttf */,
+				15BDA6F02F347EFA00BB64DD /* Poppins-Thin.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		15F55B232F2BBECB00783F90 /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				153580312F18CA9C00278D38 /* LoginViewController.swift */,
+				15FF90222F27C7C200D87624 /* LoginViewController.xib */,
+			);
+			path = LoginScreen;
+			sourceTree = "<group>";
+		};
+		15F55B242F2BBEF300783F90 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				15F55B252F2BBF0D00783F90 /* LoadingManager.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		15FF90242F29258200D87624 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				154130B82F0D542A0049340B /* ButtonCustom.swift */,
+				15E569892F0E14A90068B865 /* ButtonCustom.xib */,
+				15097E4E2F0FB2B30083F533 /* CustomLbSplash.swift */,
+				15097E502F0FB2CC0083F533 /* CustomLbSplash.xib */,
+				15E73F522F2F4C9400644E9C /* MTextField.xib */,
+				15E73F542F2F4C9E00644E9C /* MTextField.swift */,
+				15BDA6E72F3476A600BB64DD /* CustomLabel.swift */,
+				15BDA6E92F3476B900BB64DD /* CustomLabel.xib */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 		98BF3BC42F1E97B000250919 /* SplashScreen */ = {
@@ -263,13 +371,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15FF90232F27C7C200D87624 /* LoginViewController.xib in Resources */,
 				151B0DDD2F14EF19009003AC /* SplashPageViewController.xib in Resources */,
 				154130AB2F0D4D5E0049340B /* LaunchScreen.storyboard in Resources */,
-				15E5698A2F0E14A90068B865 /* ButtonSplashCustom.xib in Resources */,
+				15BDA6EA2F3476B900BB64DD /* CustomLabel.xib in Resources */,
+				15E73F532F2F4C9400644E9C /* MTextField.xib in Resources */,
+				15E5698A2F0E14A90068B865 /* ButtonCustom.xib in Resources */,
+				1593DD012F30F1E10005B370 /* WelcomeViewController.xib in Resources */,
 				15097E4D2F0FADDF0083F533 /* SplashDeliveryViewController.xib in Resources */,
+				15BDA6ED2F347EDA00BB64DD /* Poppins-Bold.ttf in Resources */,
+				15BDA6F12F347EFA00BB64DD /* Poppins-Thin.ttf in Resources */,
+				15BDA6EF2F347EED00BB64DD /* Poppins-Regular.ttf in Resources */,
 				15097E512F0FB2CC0083F533 /* CustomLbSplash.xib in Resources */,
 				154130A82F0D4D5E0049340B /* Assets.xcassets in Resources */,
 				98BF3BC62F1E97CD00250919 /* SplashScreen.xib in Resources */,
+				154B33D82F30E235005A3BF2 /* SignUpController.xib in Resources */,
+				1522A35F2F3D021600493540 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,18 +398,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				153580352F1A58FA00278D38 /* NetworkService.swift in Sources */,
-				154130B92F0D542A0049340B /* ButtonSplashCustom.swift in Sources */,
+				15E73F552F2F4C9E00644E9C /* MTextField.swift in Sources */,
+				15BDA6F32F347FE600BB64DD /* FontStyles.swift in Sources */,
+				154130B92F0D542A0049340B /* ButtonCustom.swift in Sources */,
 				15097E4B2F0FADCA0083F533 /* SplashDeliveryViewController.swift in Sources */,
-				158A05CC2F1E16DA008C5F98 /* SplashServiceProtocol.swift in Sources */,
+				1593DCFF2F30F1C00005B370 /* WelcomeViewController.swift in Sources */,
+				15F55B262F2BBF0D00783F90 /* LoadingManager.swift in Sources */,
+				154B33D62F30E228005A3BF2 /* SignUpController.swift in Sources */,
 				1541309F2F0D4D5B0049340B /* AppDelegate.swift in Sources */,
+				15BDA6E82F3476A600BB64DD /* CustomLabel.swift in Sources */,
 				155CF29A2F18881200DE729A /* HomeViewController.swift in Sources */,
 				15097E4F2F0FB2B30083F533 /* CustomLbSplash.swift in Sources */,
+				159D69B32F3A3D290059B32C /* RegisterRequest.swift in Sources */,
+				1522A35B2F3CF36A00493540 /* RegisterResponse.swift in Sources */,
 				154130A12F0D4D5B0049340B /* SceneDelegate.swift in Sources */,
+				1522A3592F3CF2E100493540 /* LoginResponse.swift in Sources */,
 				154130BD2F0D585B0049340B /* ColorSet.swift in Sources */,
 				158A05CA2F1D38E3008C5F98 /* SplashData.swift in Sources */,
 				153580322F18CA9C00278D38 /* LoginViewController.swift in Sources */,
+				1526AD4A2F37A519000058F9 /* AuthCoordinatior.swift in Sources */,
+				1526AD442F379BE7000058F9 /* AuthAPI.swift in Sources */,
 				151B0DDB2F14EEF5009003AC /* SplashPageViewController.swift in Sources */,
 				153580372F1A592400278D38 /* SplashAPI.swift in Sources */,
+				157AF07B2F373B1100CEDC8C /* LoginRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,7 +567,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "grocery-app/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = SplashScreen.xib;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -468,7 +596,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "grocery-app/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = SplashScreen.xib;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (

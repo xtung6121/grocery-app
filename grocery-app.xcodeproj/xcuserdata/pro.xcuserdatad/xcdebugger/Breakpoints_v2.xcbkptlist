@@ -164,5 +164,302 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3B9C7946-675D-4133-A370-8812004E29C5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "grocery-app/Views/WelcomeScreen/WelcomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "WelcomeViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "3B9C7946-675D-4133-A370-8812004E29C5 - ce37ef97ded8e23f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "grocery_app.WelcomeViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "grocery-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pro/Documents/project-2026/grocery-app/grocery-app/Views/WelcomeScreen/WelcomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "101">
+               </Location>
+               <Location
+                  uuid = "3B9C7946-675D-4133-A370-8812004E29C5 - f67ef5a731ab37f1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "grocery_app.WelcomeViewController.setupBackgroundView() -&gt; ()"
+                  moduleName = "grocery-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pro/Documents/project-2026/grocery-app/grocery-app/Views/WelcomeScreen/WelcomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "54">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4D764E74-7C25-4C7E-A3F5-61517F3C1B6E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "grocery-app/Views/CustomView/CustomLabel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "6"
+            endingLineNumber = "6"
+            landmarkName = "CustomLabel"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ED716CD3-FBA3-4D16-BD7F-15F5E8E74A0D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "grocery-app/Views/WelcomeScreen/WelcomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "bindActions()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "ED716CD3-FBA3-4D16-BD7F-15F5E8E74A0D - 777cd2d8ce007d98"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "grocery_app.WelcomeViewController.bindActions() -&gt; ()"
+                  moduleName = "grocery-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pro/Documents/project-2026/grocery-app/grocery-app/Views/WelcomeScreen/WelcomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "37">
+               </Location>
+               <Location
+                  uuid = "ED716CD3-FBA3-4D16-BD7F-15F5E8E74A0D - 2e54bba0a9a579b5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in grocery_app.WelcomeViewController.bindActions() -&gt; ()"
+                  moduleName = "grocery-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pro/Documents/project-2026/grocery-app/grocery-app/Views/WelcomeScreen/WelcomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "41">
+               </Location>
+               <Location
+                  uuid = "ED716CD3-FBA3-4D16-BD7F-15F5E8E74A0D - 777cd2d8ce007db9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "grocery_app.WelcomeViewController.bindActions() -&gt; ()"
+                  moduleName = "grocery-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pro/Documents/project-2026/grocery-app/grocery-app/Views/WelcomeScreen/WelcomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "37">
+               </Location>
+               <Location
+                  uuid = "ED716CD3-FBA3-4D16-BD7F-15F5E8E74A0D - 777cd2d8ce007a24"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "grocery_app.WelcomeViewController.bindActions() -&gt; ()"
+                  moduleName = "grocery-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pro/Documents/project-2026/grocery-app/grocery-app/Views/WelcomeScreen/WelcomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "217F78EC-738D-4E08-A2A1-4521F0B193D9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "grocery-app/Views/WelcomeScreen/WelcomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "bindActions()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "217F78EC-738D-4E08-A2A1-4521F0B193D9 - 777cd2d8ce007d7b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "grocery_app.WelcomeViewController.bindActions() -&gt; ()"
+                  moduleName = "grocery-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pro/Documents/project-2026/grocery-app/grocery-app/Views/WelcomeScreen/WelcomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "37">
+               </Location>
+               <Location
+                  uuid = "217F78EC-738D-4E08-A2A1-4521F0B193D9 - 2e54bba0a9a57977"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in grocery_app.WelcomeViewController.bindActions() -&gt; ()"
+                  moduleName = "grocery-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pro/Documents/project-2026/grocery-app/grocery-app/Views/WelcomeScreen/WelcomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "51">
+               </Location>
+               <Location
+                  uuid = "217F78EC-738D-4E08-A2A1-4521F0B193D9 - 777cd2d8ce007d98"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "grocery_app.WelcomeViewController.bindActions() -&gt; ()"
+                  moduleName = "grocery-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pro/Documents/project-2026/grocery-app/grocery-app/Views/WelcomeScreen/WelcomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "37">
+               </Location>
+               <Location
+                  uuid = "217F78EC-738D-4E08-A2A1-4521F0B193D9 - 2e54bba0a9a579b5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in grocery_app.WelcomeViewController.bindActions() -&gt; ()"
+                  moduleName = "grocery-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pro/Documents/project-2026/grocery-app/grocery-app/Views/WelcomeScreen/WelcomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "41">
+               </Location>
+               <Location
+                  uuid = "217F78EC-738D-4E08-A2A1-4521F0B193D9 - 777cd2d8ce007db9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "grocery_app.WelcomeViewController.bindActions() -&gt; ()"
+                  moduleName = "grocery-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pro/Documents/project-2026/grocery-app/grocery-app/Views/WelcomeScreen/WelcomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "37">
+               </Location>
+               <Location
+                  uuid = "217F78EC-738D-4E08-A2A1-4521F0B193D9 - 2e54bba0a9a579ea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in grocery_app.WelcomeViewController.bindActions() -&gt; ()"
+                  moduleName = "grocery-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pro/Documents/project-2026/grocery-app/grocery-app/Views/WelcomeScreen/WelcomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "41">
+               </Location>
+               <Location
+                  uuid = "217F78EC-738D-4E08-A2A1-4521F0B193D9 - 777cd2d8ce007a24"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "grocery_app.WelcomeViewController.bindActions() -&gt; ()"
+                  moduleName = "grocery-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pro/Documents/project-2026/grocery-app/grocery-app/Views/WelcomeScreen/WelcomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3C12CC3F-D1B4-4E81-B6DE-BCB2B19FA71C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "grocery-app/Views/CustomView/ButtonCustom.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "didTap()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1013A3CF-49F5-4C30-8FDC-9CABBB851D37"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "grocery-app/Views/LoginScreen/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "didTapButtonLogin()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

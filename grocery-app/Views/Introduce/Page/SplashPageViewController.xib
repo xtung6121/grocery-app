@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24128" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,8 +15,6 @@
                 <outlet property="customLbSplash" destination="sSF-SJ-5ox" id="yGN-ky-BN9"/>
                 <outlet property="imageView" destination="OuS-yR-iYW" id="1G1-jK-5JV"/>
                 <outlet property="pageControl" destination="geB-iS-DKa" id="3FQ-yd-R7v"/>
-                <outlet property="splashBottomConstraint" destination="sSF-SJ-5ox" id="uRg-gg-1tp"/>
-                <outlet property="splashTopConstraint" destination="sSF-SJ-5ox" id="IUU-hz-1Lk"/>
                 <outlet property="view" destination="iN0-l3-epB" id="oOF-5C-cVw"/>
             </connections>
         </placeholder>
@@ -40,13 +38,13 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QXJ-oi-4SX" userLabel="viewFooter">
-                            <rect key="frame" x="12" y="684" width="369" height="112"/>
+                            <rect key="frame" x="12" y="689" width="369" height="107"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="Bbi-Bj-sjQ">
-                                    <rect key="frame" x="0.0" y="0.0" width="369" height="112"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="369" height="107"/>
                                     <subviews>
                                         <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="geB-iS-DKa">
-                                            <rect key="frame" x="139.33333333333334" y="0.0" width="90.666666666666657" height="20"/>
+                                            <rect key="frame" x="118.00000000000001" y="0.0" width="133.33333333333337" height="20"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="JKm-MP-Pys"/>
@@ -54,14 +52,15 @@
                                             <color key="pageIndicatorTintColor" red="0.092497412870000004" green="0.2961524492" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="currentPageIndicatorTintColor" systemColor="systemGreenColor"/>
                                         </pageControl>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2du-9S-sv2" customClass="ButtonSplashCustom" customModule="grocery_app" customModuleProvider="target">
-                                            <rect key="frame" x="12" y="47" width="345" height="65"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2du-9S-sv2" customClass="ButtonCustom" customModule="grocery_app" customModuleProvider="target">
+                                            <rect key="frame" x="12" y="47" width="345" height="60"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="65" id="Sac-in-eEV"/>
+                                                <constraint firstAttribute="height" constant="60" id="Sac-in-eEV"/>
                                             </constraints>
                                         </view>
                                     </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstItem="2du-9S-sv2" firstAttribute="leading" secondItem="Bbi-Bj-sjQ" secondAttribute="leading" constant="12" id="VoN-vU-h1d"/>
                                         <constraint firstAttribute="trailing" secondItem="2du-9S-sv2" secondAttribute="trailing" constant="12" id="xtW-qZ-dck"/>
@@ -89,7 +88,7 @@
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="Xh4-9I-VCl" secondAttribute="trailing" id="2Xk-2d-8dy"/>
                 <constraint firstItem="OuS-yR-iYW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="OV4-bX-btX"/>
@@ -102,92 +101,8 @@
             </constraints>
             <point key="canvasLocation" x="43.359375" y="-32.503660322108345"/>
         </view>
-        <view contentMode="scaleToFill" id="PDc-Y5-mOg" userLabel="superView">
-            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A2j-IF-XDv">
-                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                </imageView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pDs-9N-SIR" userLabel="ContentView">
-                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                    <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jy1-ge-4qO" customClass="CustomLbSplash" customModule="grocery_app" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="96" width="393" height="200"/>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="200" id="bgB-H1-5H3"/>
-                            </constraints>
-                        </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ixh-Sf-J32" userLabel="viewFooter">
-                            <rect key="frame" x="12" y="684" width="369" height="112"/>
-                            <subviews>
-                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="S3H-tJ-EKV">
-                                    <rect key="frame" x="0.0" y="0.0" width="369" height="112"/>
-                                    <subviews>
-                                        <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="k4n-8U-fwl">
-                                            <rect key="frame" x="139.33333333333334" y="0.0" width="90.666666666666657" height="20"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="20" id="ZLk-iI-HIK"/>
-                                            </constraints>
-                                            <color key="pageIndicatorTintColor" red="0.092497412870000004" green="0.2961524492" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="currentPageIndicatorTintColor" systemColor="systemGreenColor"/>
-                                        </pageControl>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wfl-iH-kgX" customClass="ButtonSplashCustom" customModule="grocery_app" customModuleProvider="target">
-                                            <rect key="frame" x="12" y="47" width="345" height="65"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="65" id="hbb-4c-1fY"/>
-                                            </constraints>
-                                        </view>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="Wfl-iH-kgX" firstAttribute="leading" secondItem="S3H-tJ-EKV" secondAttribute="leading" constant="12" id="8zE-fI-vNd"/>
-                                        <constraint firstAttribute="trailing" secondItem="Wfl-iH-kgX" secondAttribute="trailing" constant="12" id="Dln-PB-ef9"/>
-                                    </constraints>
-                                </stackView>
-                            </subviews>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <constraints>
-                                <constraint firstAttribute="bottom" secondItem="S3H-tJ-EKV" secondAttribute="bottom" id="7aU-bY-sxg"/>
-                                <constraint firstItem="S3H-tJ-EKV" firstAttribute="top" secondItem="ixh-Sf-J32" secondAttribute="top" id="I6m-5S-pFC"/>
-                                <constraint firstItem="S3H-tJ-EKV" firstAttribute="leading" secondItem="ixh-Sf-J32" secondAttribute="leading" id="Kdg-A5-iej"/>
-                                <constraint firstAttribute="trailing" secondItem="S3H-tJ-EKV" secondAttribute="trailing" id="zcI-FI-RGM"/>
-                            </constraints>
-                        </view>
-                    </subviews>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstAttribute="trailing" secondItem="Jy1-ge-4qO" secondAttribute="trailing" id="WyF-KV-uOF"/>
-                        <constraint firstItem="Jy1-ge-4qO" firstAttribute="leading" secondItem="pDs-9N-SIR" secondAttribute="leading" id="ahy-4U-yaV"/>
-                        <constraint firstItem="ixh-Sf-J32" firstAttribute="leading" secondItem="pDs-9N-SIR" secondAttribute="leading" constant="12" id="kDO-l3-e8C"/>
-                        <constraint firstAttribute="trailing" secondItem="ixh-Sf-J32" secondAttribute="trailing" constant="12" id="l4d-zb-cL8"/>
-                        <constraint firstAttribute="bottom" secondItem="ixh-Sf-J32" secondAttribute="bottom" constant="56" id="mMC-mO-BVv"/>
-                        <constraint firstItem="Jy1-ge-4qO" firstAttribute="top" secondItem="pDs-9N-SIR" secondAttribute="top" constant="96" id="uzM-pM-L9d"/>
-                    </constraints>
-                </view>
-            </subviews>
-            <viewLayoutGuide key="safeArea" id="Usd-9L-3Ic"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <constraints>
-                <constraint firstItem="pDs-9N-SIR" firstAttribute="top" secondItem="PDc-Y5-mOg" secondAttribute="top" id="4g8-U1-eDd"/>
-                <constraint firstAttribute="trailing" secondItem="A2j-IF-XDv" secondAttribute="trailing" id="86e-3M-Q0A"/>
-                <constraint firstItem="pDs-9N-SIR" firstAttribute="leading" secondItem="PDc-Y5-mOg" secondAttribute="leading" id="C0m-UO-oEY"/>
-                <constraint firstItem="A2j-IF-XDv" firstAttribute="top" secondItem="PDc-Y5-mOg" secondAttribute="top" id="Gp4-hz-5I2"/>
-                <constraint firstAttribute="bottom" secondItem="A2j-IF-XDv" secondAttribute="bottom" id="KxE-NY-N9L"/>
-                <constraint firstAttribute="bottom" secondItem="pDs-9N-SIR" secondAttribute="bottom" id="m9e-Fk-xcc"/>
-                <constraint firstAttribute="trailing" secondItem="pDs-9N-SIR" secondAttribute="trailing" id="vgm-RI-8Gr"/>
-                <constraint firstItem="A2j-IF-XDv" firstAttribute="leading" secondItem="PDc-Y5-mOg" secondAttribute="leading" id="yne-KN-wdI"/>
-            </constraints>
-            <point key="canvasLocation" x="43.359375" y="-32.503660322108345"/>
-        </view>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
