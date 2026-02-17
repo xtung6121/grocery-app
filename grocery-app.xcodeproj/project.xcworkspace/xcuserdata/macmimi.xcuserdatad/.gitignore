@@ -1,0 +1,93 @@
+#################################################
+# macOS
+#################################################
+.DS_Store
+.AppleDouble
+.LSOverride
+
+#################################################
+# Xcode
+#################################################
+
+# User settings
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+
+# Workspace settings
+*.xcworkspace/xcuserdata/
+
+# Derived data
+DerivedData/
+build/
+Build/
+
+# Archives
+*.xcarchive
+*.ipa
+
+# Swift Package Manager
+.build/
+Packages/
+Package.resolved
+
+# Xcode cache
+*.moved-aside
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+
+#################################################
+# CocoaPods
+#################################################
+
+Pods/
+Podfile.lock
+
+# Nếu team muốn commit Podfile.lock thì comment dòng trên:
+# !Podfile.lock
+
+#################################################
+# Carthage
+#################################################
+
+Carthage/Build/
+
+#################################################
+# Fastlane
+#################################################
+
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+#################################################
+# Firebase / Google
+#################################################
+
+GoogleService-Info.plist
+
+#################################################
+# Environment / Secrets
+#################################################
+
+.env
+*.key
+*.p12
+*.mobileprovision
+
+#################################################
+# Logs
+#################################################
+
+*.log
+
+#################################################
+# Temporary files
+#################################################
+
+*.swp
+*~.nib
