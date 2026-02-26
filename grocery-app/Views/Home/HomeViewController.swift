@@ -8,10 +8,25 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var imageViewHeader: UIImageView!
+    @IBOutlet weak var labelContentView: UILabel!
+    @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet weak var categoriesLabel: UILabel!
+    @IBOutlet weak var categoriesCollectionView: UICollectionView!
+    @IBOutlet weak var productCollectionView: UICollectionView!
+    @IBOutlet weak var categoriesNav: UIButton!
+    @IBOutlet weak var featuredlabel: UILabel!
+    @IBOutlet weak var featuredNav: UIButton!
+    
+    // fake data
+    var categories: [String] = ["veg", "fruit", "meat", "veg", "fruit", "meat"]
+    var products: [String] = ["veg", "fruit", "meat"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        setupCollectionView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -23,5 +38,104 @@ class HomeViewController: UIViewController {
         overrideUserInterfaceStyle = .light
         view.backgroundColor = .systemBackground
         view.largeContentTitle = "Home"
+        
+        searchBar.placeholder = "Search keywords.."
+        imageViewHeader.image = UIImage(named: "homeImageView")
+        
+        labelContentView.text = "20% off on your first purchase"
+        labelContentView.font = .title(size: 18)
+        
+        categoriesLabel.text = "Categories"
+        categoriesLabel.font = .title(size: 18)
+        
+        featuredlabel.text = "Featured products"
+        featuredlabel.font = .title(size: 18)
+        categoriesNav.setImage(UIImage(named: "navigationbar"), for: .normal)
+        featuredNav.setImage(UIImage(named: "navigationbar"), for: .normal)
+    }
+    
+    private func setupCollectionView() {
+        configureCategoriesCollectionView()
+        configProductsCollectionView()
+    }
+    
+    private func configureCategoriesCollectionView() {
+        let nib = UINib(nibName: "CategoriesCell", bundle: .main)
+        categoriesCollectionView.register(nib, forCellWithReuseIdentifier: "CategoriesCell")
+        categoriesCollectionView.dataSource = self
+        categoriesCollectionView.delegate = self
+        categoriesCollectionView.showsHorizontalScrollIndicator = false
+        
+        if let flowLayout = categoriesCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            flowLayout.estimatedItemSize = CGSize(width: 58, height: 78)
+        }
+        
+    }
+    private func configProductsCollectionView() {
+        let nib = UINib(nibName: "ProductsCell", bundle: .main)
+        productCollectionView.register(nib, forCellWithReuseIdentifier: "ProductsCell")
+        productCollectionView.dataSource = self
+        productCollectionView.delegate = self
+        productCollectionView.showsVerticalScrollIndicator = false
+        
+        if let flowLayout = productCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            flowLayout.estimatedItemSize = CGSize(width: 181, height: 234)
+        }
+    }
+}
+
+
+extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    func setupCategoryCell(index: IndexPath, collectionView: UICollectionView) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoriesCell", for: index ) as! CategoriesCell
+        cell.imageView.image = UIImage(named: "Ellipse 10")
+        cell.nameLabel.text = "vegetables"
+        return cell
+    }
+    
+    func setupProductsCell(index: IndexPath, collectionView: UICollectionView) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductsCell", for: index ) as! ProductsCell
+        cell.productsImage.image = UIImage(named: "Group 32")
+        cell.newLabel.text = "NEW"
+        cell.btnTicked.setImage(UIImage(named: "loved"), for: .normal)
+        cell.priceLabel.text = "$8.00"
+        cell.titleLabel.text = "Fresh Peach"
+        cell.titleLabel.font = .title(size: 18)
+        cell.desLabel.text = "dozen"
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        numberOfItemsInSection section: Int) -> Int {
+        switch collectionView {
+        case categoriesCollectionView:
+            return categories.count
+        case productCollectionView:
+            return products.count
+        default:
+            return 0
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        switch collectionView {
+        case categoriesCollectionView:
+            return setupCategoryCell(index: indexPath, collectionView: collectionView)
+        case productCollectionView:
+            return  setupProductsCell(index: indexPath, collectionView: collectionView)
+        default:
+            return UICollectionViewCell()
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        if collectionView == categoriesCollectionView {
+            return 18  // khoảng cách ngang giữa các cell = 18
+        }
+        return 0
     }
 }
