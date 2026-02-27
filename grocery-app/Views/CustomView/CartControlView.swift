@@ -8,10 +8,9 @@ class CartControlView: UIView {
     @IBOutlet private weak var quantityLabel: UILabel!
     @IBOutlet private weak var minusButton: UIButton!
     
-    var onAddToCart: (() -> Void)?          // Khi tap "Add to cart"
-    var onQuantityChanged: ((Int) -> Void)? // Khi thay đổi số lượng (+/-)
+    var onAddToCart: (() -> Void)?
+    var onQuantityChanged: ((Int) -> Void)?
     
-    // MARK: - Properties
     private var currentQuantity: Int = 1 {
         didSet {
             quantityLabel.text = "\(currentQuantity)"
@@ -19,7 +18,6 @@ class CartControlView: UIView {
         }
     }
     
-    // MARK: - Init
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
@@ -31,29 +29,43 @@ class CartControlView: UIView {
     }
     
     private func commonInit() {
-        // Load nib và add vào self
         let nib = UINib(nibName: String(describing: Self.self), bundle: .main)
         guard let view = nib.instantiate(withOwner: self, options: nil).first as? UIView else {
             fatalError("Không load được CartControlView.xib")
         }
         
-        // Add view từ nib vào self
         addSubview(view)
         view.frame = bounds
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
-        // Setup UI ban đầu
         setupUI()
+        setupActions()
     }
     
-    private func setupUI() {  
+    private func setupUI() {
+        // Debug nil outlet
+        if labelAddToCart == nil { print("labelAddToCart nil") }
+        if imageViewCart == nil { print("imageViewCart nil") }
+        if plusButton == nil { print("plusButton nil") }
+        if quantityLabel == nil { print("quantityLabel nil") }
+        if minusButton == nil { print("minusButton nil") }
+        
         labelAddToCart.text = "Add to cart"
-        imageViewCart.image = UIImage(named: "cartIcon")
+        labelAddToCart.font = .title(size: 12)
+        imageViewCart.image = UIImage(named: "cartIcon") ?? UIImage(systemName: "cart")
         quantityLabel.text = "\(currentQuantity)"
-
+        quantityLabel.textAlignment = .center
     }
     
-    // MARK: - Actions
+    private func setupActions() {
+        minusButton.addTarget(self, action: #selector(minusTapped), for: .touchUpInside)
+        plusButton.addTarget(self, action: #selector(plusTapped), for: .touchUpInside)
+        
+        // Nếu muốn tap toàn view để add to cart
+        let tap = UITapGestureRecognizer(target: self, action: #selector(viewTapped))
+        addGestureRecognizer(tap)
+    }
+    
     @objc private func minusTapped() {
         if currentQuantity > 1 {
             currentQuantity -= 1
@@ -64,17 +76,15 @@ class CartControlView: UIView {
         currentQuantity += 1
     }
     
-    @objc private func viewTapped() {
-        // Nếu anh muốn tap toàn bộ view để add to cart
-        onAddToCart?()
+    @objc private func viewTapped(_ gesture: UITapGestureRecognizer) {
+        // Kiểm tra tap trên phần nào
+        let location = gesture.location(in: self)
+        if labelAddToCart.frame.contains(location) || imageViewCart.frame.contains(location) {
+            onAddToCart?()
+        }
     }
     
-    // MARK: - Public methods để config từ cell
     func configure(quantity: Int = 1) {
-        currentQuantity = max(1, quantity)
-    }
-    
-    func setQuantity(_ quantity: Int) {
         currentQuantity = max(1, quantity)
     }
 }

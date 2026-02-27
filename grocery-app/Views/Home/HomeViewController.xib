@@ -32,7 +32,7 @@
                     <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gCA-qx-e3S">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="900"/>
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="850"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XBS-Dg-rSJ" userLabel="viewSearchBar">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
@@ -188,19 +188,12 @@
                                             </collectionViewFlowLayout>
                                         </collectionView>
                                     </subviews>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="tS0-Bs-H2p" secondAttribute="trailing" constant="17" id="6E7-BN-qkR"/>
                                         <constraint firstItem="tS0-Bs-H2p" firstAttribute="leading" secondItem="1Aw-9I-eF7" secondAttribute="leading" constant="17" id="Baf-9j-23T"/>
                                         <constraint firstAttribute="height" priority="999" constant="300" id="dSc-gz-h63"/>
                                         <constraint firstItem="tS0-Bs-H2p" firstAttribute="top" secondItem="1Aw-9I-eF7" secondAttribute="top" constant="17" id="wPW-jb-tFJ"/>
-                                    </constraints>
-                                </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7yD-0Y-1gd" userLabel="ghostView">
-                                    <rect key="frame" x="0.0" y="850" width="393" height="50"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" priority="250" constant="50" id="cVH-Js-DyL"/>
                                     </constraints>
                                 </view>
                             </subviews>

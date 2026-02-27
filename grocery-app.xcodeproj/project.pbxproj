@@ -51,6 +51,9 @@
 		15CEE2662F4D79AE00CE1FF8 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CEE2652F4D79AE00CE1FF8 /* Categories.swift */; };
 		15CEE2682F4D7A0100CE1FF8 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CEE2672F4D7A0000CE1FF8 /* Products.swift */; };
 		15CEE26A2F4D7D1800CE1FF8 /* ProductsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CEE2692F4D7D1800CE1FF8 /* ProductsResponse.swift */; };
+		15CEE26C2F519C4400CE1FF8 /* BannersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CEE26B2F519C4400CE1FF8 /* BannersResponse.swift */; };
+		15CEE26F2F51A48100CE1FF8 /* BannerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CEE26E2F51A48100CE1FF8 /* BannerAPI.swift */; };
+		15CEE2712F51A48F00CE1FF8 /* ProductAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CEE2702F51A48F00CE1FF8 /* ProductAPI.swift */; };
 		15E5698A2F0E14A90068B865 /* ButtonCustom.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15E569892F0E14A90068B865 /* ButtonCustom.xib */; };
 		15E73F532F2F4C9400644E9C /* MTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15E73F522F2F4C9400644E9C /* MTextField.xib */; };
 		15E73F552F2F4C9E00644E9C /* MTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E73F542F2F4C9E00644E9C /* MTextField.swift */; };
@@ -108,6 +111,9 @@
 		15CEE2652F4D79AE00CE1FF8 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 		15CEE2672F4D7A0000CE1FF8 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
 		15CEE2692F4D7D1800CE1FF8 /* ProductsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsResponse.swift; sourceTree = "<group>"; };
+		15CEE26B2F519C4400CE1FF8 /* BannersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannersResponse.swift; sourceTree = "<group>"; };
+		15CEE26E2F51A48100CE1FF8 /* BannerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAPI.swift; sourceTree = "<group>"; };
+		15CEE2702F51A48F00CE1FF8 /* ProductAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductAPI.swift; sourceTree = "<group>"; };
 		15E569892F0E14A90068B865 /* ButtonCustom.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonCustom.xib; sourceTree = "<group>"; };
 		15E73F522F2F4C9400644E9C /* MTextField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTextField.xib; sourceTree = "<group>"; };
 		15E73F542F2F4C9E00644E9C /* MTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTextField.swift; sourceTree = "<group>"; };
@@ -177,6 +183,7 @@
 				15CEE2652F4D79AE00CE1FF8 /* Categories.swift */,
 				15CEE2672F4D7A0000CE1FF8 /* Products.swift */,
 				15CEE2692F4D7D1800CE1FF8 /* ProductsResponse.swift */,
+				15CEE26B2F519C4400CE1FF8 /* BannersResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -282,6 +289,8 @@
 				153580342F1A58FA00278D38 /* NetworkService.swift */,
 				153580362F1A592400278D38 /* SplashAPI.swift */,
 				1526AD432F379BE7000058F9 /* AuthAPI.swift */,
+				15CEE26E2F51A48100CE1FF8 /* BannerAPI.swift */,
+				15CEE2702F51A48F00CE1FF8 /* ProductAPI.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -459,6 +468,7 @@
 				15BDA6F32F347FE600BB64DD /* FontStyles.swift in Sources */,
 				154130B92F0D542A0049340B /* ButtonCustom.swift in Sources */,
 				15097E4B2F0FADCA0083F533 /* SplashDeliveryViewController.swift in Sources */,
+				15CEE26C2F519C4400CE1FF8 /* BannersResponse.swift in Sources */,
 				1593DCFF2F30F1C00005B370 /* WelcomeViewController.swift in Sources */,
 				15F55B262F2BBF0D00783F90 /* LoadingManager.swift in Sources */,
 				154B33D62F30E228005A3BF2 /* SignUpController.swift in Sources */,
@@ -474,7 +484,9 @@
 				154130A12F0D4D5B0049340B /* SceneDelegate.swift in Sources */,
 				1522A3592F3CF2E100493540 /* LoginResponse.swift in Sources */,
 				15CEE26A2F4D7D1800CE1FF8 /* ProductsResponse.swift in Sources */,
+				15CEE26F2F51A48100CE1FF8 /* BannerAPI.swift in Sources */,
 				154130BD2F0D585B0049340B /* ColorSet.swift in Sources */,
+				15CEE2712F51A48F00CE1FF8 /* ProductAPI.swift in Sources */,
 				98E0BE362F35075C00C6F849 /* ForgotPasswordViewController.swift in Sources */,
 				158A05CA2F1D38E3008C5F98 /* SplashData.swift in Sources */,
 				15CEE2682F4D7A0100CE1FF8 /* Products.swift in Sources */,
