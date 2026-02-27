@@ -16,6 +16,7 @@ class ProductsCell: UICollectionViewCell {
     @IBOutlet weak var desLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var cartCustonView: CartControlView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         containerView.backgroundColor = .white

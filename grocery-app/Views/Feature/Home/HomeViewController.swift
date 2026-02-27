@@ -7,6 +7,8 @@
 
 import UIKit
 
+// collection View
+
 class HomeViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var imageViewHeader: UIImageView!
@@ -18,10 +20,11 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var categoriesNav: UIButton!
     @IBOutlet weak var featuredlabel: UILabel!
     @IBOutlet weak var featuredNav: UIButton!
+    @IBOutlet weak var collectionViewHeight: NSLayoutConstraint!
     
     // fake data
     var categories: [String] = ["veg", "fruit", "meat", "veg", "fruit", "meat"]
-    var products: [String] = ["veg", "fruit", "meat"]
+    var products: [String] = ["veg", "fruit", "meat", "veg", "fruit", "meat", "veg", "fruit", "meat"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,14 +32,16 @@ class HomeViewController: UIViewController {
         setupCollectionView()
     }
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        productCollectionView.collectionViewLayout.invalidateLayout()  // buộc tính lại size khi màn hình load xong
-    }
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        productCollectionView.layoutIfNeeded()
+        collectionViewHeight.constant = productCollectionView.contentSize.height
     }
     
     private func setupUI(){
@@ -72,42 +77,41 @@ class HomeViewController: UIViewController {
         categoriesCollectionView.showsHorizontalScrollIndicator = false
         
         if let flowLayout = categoriesCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
-            flowLayout.estimatedItemSize = CGSize(width: 58, height: 78)
+            flowLayout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
         }
         
     }
+    
     private func configProductsCollectionView() {
         let nib = UINib(nibName: "ProductsCell", bundle: .main)
         productCollectionView.register(nib, forCellWithReuseIdentifier: "ProductsCell")
         productCollectionView.dataSource = self
         productCollectionView.delegate = self
         productCollectionView.showsVerticalScrollIndicator = false
+        productCollectionView.isScrollEnabled = false
         
-        if let flowLayout = productCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
-            flowLayout.estimatedItemSize = CGSize(width: 181, height: 300)
-        }
-    }
-    
-    // fetch data
-    // api/v1/banners
-    private func fetchData() {
-        Task { @MainActor in
-            do {
-                let fetchHomeData: SplashDataResponse = try await
-                NetworkService.shared.request(
-                    api: APIEndpoint.getSplash,
-                    responseType: SplashDataResponse.self
-                )
-                
-            } catch {
-                print("err fetch data: ", error)
-            }
-        }
     }
 }
 
-
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        if collectionView == productCollectionView {
+            
+            let padding: CGFloat = 16
+            let spacing: CGFloat = 12
+            let totalSpacing = spacing
+            
+            let width = (collectionView.frame.width - padding * 2 - totalSpacing) / 2
+            
+            return CGSize(width: width, height: 220)
+        }
+        
+        return CGSize(width: 80, height: 100)
+    }
     
     func setupCategoryCell(index: IndexPath, collectionView: UICollectionView) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoriesCell", for: index ) as! CategoriesCell
@@ -119,37 +123,13 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func setupProductsCell(index: IndexPath, collectionView: UICollectionView) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductsCell", for: index ) as! ProductsCell
         cell.productsImage.image = UIImage(named: "Group 32")
+        cell.newLabel.text = "NEW"
         cell.btnTicked.setImage(UIImage(named: "loved"), for: .normal)
         cell.priceLabel.text = "$8.00"
         cell.titleLabel.text = "Fresh Peach"
         cell.titleLabel.font = .title(size: 18)
         cell.desLabel.text = "dozen"
         return cell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView,
-                        layout collectionViewLayout: UICollectionViewLayout,
-                        sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        let spacing: CGFloat = 16
-        let inset: CGFloat = 16
-        
-        if collectionView == categoriesCollectionView {
-            let columns: CGFloat = 5
-            let totalSpacing = (columns - 1) * spacing + 2 * inset
-            let width = (categoriesCollectionView.bounds.width - totalSpacing) / columns
-            return CGSize(width: width, height: width + 50)
-        }
-        else if collectionView == productCollectionView {
-            let columns: CGFloat = 2
-            let totalSpacing = (columns - 1) * spacing + 2 * inset
-            let width = (productCollectionView.bounds.width - totalSpacing) / columns
-            
-            // Fix height = 0: dùng giá trị ước lượng từ XIB, để cell tự resize sau
-            return CGSize(width: width, height: 300)  // 300 là safe value từ XIB preview
-        }
-        
-        return CGSize(width: 100, height: 100)
     }
     
     func collectionView(_ collectionView: UICollectionView,
@@ -181,9 +161,18 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
                         minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         if collectionView == categoriesCollectionView {
             return 18  // khoảng cách ngang giữa các cell = 18
-        } else if collectionView == productCollectionView {
-            return 19
         }
         return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        
+        if collectionView == productCollectionView {
+            return 20  
+        }
+        
+        return 8
     }
 }
