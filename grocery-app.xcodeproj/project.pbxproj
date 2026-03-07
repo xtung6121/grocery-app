@@ -18,6 +18,10 @@
 		1522A35F2F3D021600493540 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1522A35E2F3D021600493540 /* HomeViewController.xib */; };
 		1526AD442F379BE7000058F9 /* AuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1526AD432F379BE7000058F9 /* AuthAPI.swift */; };
 		1526AD4A2F37A519000058F9 /* AuthCoordinatior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1526AD492F37A519000058F9 /* AuthCoordinatior.swift */; };
+		1534FBD82F45A5AA00443AC3 /* CategoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1534FBD62F45A5AA00443AC3 /* CategoriesCell.swift */; };
+		1534FBD92F45A5AA00443AC3 /* CategoriesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1534FBD72F45A5AA00443AC3 /* CategoriesCell.xib */; };
+		1534FBDB2F461A2C00443AC3 /* ProductsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1534FBDA2F461A2C00443AC3 /* ProductsCell.swift */; };
+		1534FBDD2F461A4300443AC3 /* ProductsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1534FBDC2F461A4300443AC3 /* ProductsCell.xib */; };
 		153580322F18CA9C00278D38 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153580312F18CA9C00278D38 /* LoginViewController.swift */; };
 		153580352F1A58FA00278D38 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153580342F1A58FA00278D38 /* NetworkService.swift */; };
 		153580372F1A592400278D38 /* SplashAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153580362F1A592400278D38 /* SplashAPI.swift */; };
@@ -41,6 +45,15 @@
 		15BDA6EF2F347EED00BB64DD /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15BDA6EE2F347EED00BB64DD /* Poppins-Regular.ttf */; };
 		15BDA6F12F347EFA00BB64DD /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15BDA6F02F347EFA00BB64DD /* Poppins-Thin.ttf */; };
 		15BDA6F32F347FE600BB64DD /* FontStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BDA6F22F347FE600BB64DD /* FontStyles.swift */; };
+		15CEE2602F4C99BA00CE1FF8 /* CartControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CEE25F2F4C99BA00CE1FF8 /* CartControlView.swift */; };
+		15CEE2622F4C99D100CE1FF8 /* CartControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15CEE2612F4C99D100CE1FF8 /* CartControlView.xib */; };
+		15CEE2642F4D78DA00CE1FF8 /* Banners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CEE2632F4D78DA00CE1FF8 /* Banners.swift */; };
+		15CEE2662F4D79AE00CE1FF8 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CEE2652F4D79AE00CE1FF8 /* Categories.swift */; };
+		15CEE2682F4D7A0100CE1FF8 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CEE2672F4D7A0000CE1FF8 /* Products.swift */; };
+		15CEE26A2F4D7D1800CE1FF8 /* ProductsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CEE2692F4D7D1800CE1FF8 /* ProductsResponse.swift */; };
+		15CEE26C2F519C4400CE1FF8 /* BannersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CEE26B2F519C4400CE1FF8 /* BannersResponse.swift */; };
+		15CEE26F2F51A48100CE1FF8 /* BannerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CEE26E2F51A48100CE1FF8 /* BannerAPI.swift */; };
+		15CEE2712F51A48F00CE1FF8 /* ProductAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CEE2702F51A48F00CE1FF8 /* ProductAPI.swift */; };
 		15E5698A2F0E14A90068B865 /* ButtonCustom.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15E569892F0E14A90068B865 /* ButtonCustom.xib */; };
 		15E73F532F2F4C9400644E9C /* MTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15E73F522F2F4C9400644E9C /* MTextField.xib */; };
 		15E73F552F2F4C9E00644E9C /* MTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E73F542F2F4C9E00644E9C /* MTextField.swift */; };
@@ -63,6 +76,10 @@
 		1522A35E2F3D021600493540 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		1526AD432F379BE7000058F9 /* AuthAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPI.swift; sourceTree = "<group>"; };
 		1526AD492F37A519000058F9 /* AuthCoordinatior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinatior.swift; sourceTree = "<group>"; };
+		1534FBD62F45A5AA00443AC3 /* CategoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCell.swift; sourceTree = "<group>"; };
+		1534FBD72F45A5AA00443AC3 /* CategoriesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesCell.xib; sourceTree = "<group>"; };
+		1534FBDA2F461A2C00443AC3 /* ProductsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsCell.swift; sourceTree = "<group>"; };
+		1534FBDC2F461A4300443AC3 /* ProductsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductsCell.xib; sourceTree = "<group>"; };
 		153580312F18CA9C00278D38 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		153580342F1A58FA00278D38 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		153580362F1A592400278D38 /* SplashAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashAPI.swift; sourceTree = "<group>"; };
@@ -88,6 +105,15 @@
 		15BDA6EE2F347EED00BB64DD /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		15BDA6F02F347EFA00BB64DD /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
 		15BDA6F22F347FE600BB64DD /* FontStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyles.swift; sourceTree = "<group>"; };
+		15CEE25F2F4C99BA00CE1FF8 /* CartControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartControlView.swift; sourceTree = "<group>"; };
+		15CEE2612F4C99D100CE1FF8 /* CartControlView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartControlView.xib; sourceTree = "<group>"; };
+		15CEE2632F4D78DA00CE1FF8 /* Banners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banners.swift; sourceTree = "<group>"; };
+		15CEE2652F4D79AE00CE1FF8 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		15CEE2672F4D7A0000CE1FF8 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		15CEE2692F4D7D1800CE1FF8 /* ProductsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsResponse.swift; sourceTree = "<group>"; };
+		15CEE26B2F519C4400CE1FF8 /* BannersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannersResponse.swift; sourceTree = "<group>"; };
+		15CEE26E2F51A48100CE1FF8 /* BannerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAPI.swift; sourceTree = "<group>"; };
+		15CEE2702F51A48F00CE1FF8 /* ProductAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductAPI.swift; sourceTree = "<group>"; };
 		15E569892F0E14A90068B865 /* ButtonCustom.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonCustom.xib; sourceTree = "<group>"; };
 		15E73F522F2F4C9400644E9C /* MTextField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTextField.xib; sourceTree = "<group>"; };
 		15E73F542F2F4C9E00644E9C /* MTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTextField.swift; sourceTree = "<group>"; };
@@ -142,6 +168,11 @@
 				159D69B22F3A3D290059B32C /* RegisterRequest.swift */,
 				1522A3582F3CF2E100493540 /* LoginResponse.swift */,
 				1522A35A2F3CF36A00493540 /* RegisterResponse.swift */,
+				15CEE2632F4D78DA00CE1FF8 /* Banners.swift */,
+				15CEE2652F4D79AE00CE1FF8 /* Categories.swift */,
+				15CEE2672F4D7A0000CE1FF8 /* Products.swift */,
+				15CEE2692F4D7D1800CE1FF8 /* ProductsResponse.swift */,
+				15CEE26B2F519C4400CE1FF8 /* BannersResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -209,15 +240,8 @@
 		154130BE2F0D5A9B0049340B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				98E0BE322F35074200C6F849 /* ForgotPassword */,
-				154B33D42F30E1D7005A3BF2 /* SignUpScreen */,
+				9805320E2F51DD4E003D5694 /* Feature */,
 				15FF90242F29258200D87624 /* CustomView */,
-				15F55B242F2BBEF300783F90 /* Common */,
-				15F55B232F2BBECB00783F90 /* LoginScreen */,
-				98BF3BC42F1E97B000250919 /* SplashScreen */,
-				153580302F18CA6C00278D38 /* WelcomeScreen */,
-				155CF2982F1887FD00DE729A /* Home */,
-				154130B22F0D518D0049340B /* Introduce */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -234,6 +258,7 @@
 		155CF2982F1887FD00DE729A /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				9805320F2F51DD70003D5694 /* CustomView */,
 				155CF2992F18881200DE729A /* HomeViewController.swift */,
 				1522A35E2F3D021600493540 /* HomeViewController.xib */,
 			);
@@ -246,6 +271,8 @@
 				153580342F1A58FA00278D38 /* NetworkService.swift */,
 				153580362F1A592400278D38 /* SplashAPI.swift */,
 				1526AD432F379BE7000058F9 /* AuthAPI.swift */,
+				15CEE26E2F51A48100CE1FF8 /* BannerAPI.swift */,
+				15CEE2702F51A48F00CE1FF8 /* ProductAPI.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -280,6 +307,7 @@
 		15FF90242F29258200D87624 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				15F55B242F2BBEF300783F90 /* Common */,
 				154130B82F0D542A0049340B /* ButtonCustom.swift */,
 				15E569892F0E14A90068B865 /* ButtonCustom.xib */,
 				15097E4E2F0FB2B30083F533 /* CustomLbSplash.swift */,
@@ -288,6 +316,33 @@
 				15E73F542F2F4C9E00644E9C /* MTextField.swift */,
 				15BDA6E72F3476A600BB64DD /* CustomLabel.swift */,
 				15BDA6E92F3476B900BB64DD /* CustomLabel.xib */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		9805320E2F51DD4E003D5694 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				98E0BE322F35074200C6F849 /* ForgotPassword */,
+				154B33D42F30E1D7005A3BF2 /* SignUpScreen */,
+				15F55B232F2BBECB00783F90 /* LoginScreen */,
+				98BF3BC42F1E97B000250919 /* SplashScreen */,
+				153580302F18CA6C00278D38 /* WelcomeScreen */,
+				155CF2982F1887FD00DE729A /* Home */,
+				154130B22F0D518D0049340B /* Introduce */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		9805320F2F51DD70003D5694 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				15CEE25F2F4C99BA00CE1FF8 /* CartControlView.swift */,
+				15CEE2612F4C99D100CE1FF8 /* CartControlView.xib */,
+				1534FBD62F45A5AA00443AC3 /* CategoriesCell.swift */,
+				1534FBD72F45A5AA00443AC3 /* CategoriesCell.xib */,
+				1534FBDA2F461A2C00443AC3 /* ProductsCell.swift */,
+				1534FBDC2F461A4300443AC3 /* ProductsCell.xib */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -388,8 +443,11 @@
 				15FF90232F27C7C200D87624 /* LoginViewController.xib in Resources */,
 				151B0DDD2F14EF19009003AC /* SplashPageViewController.xib in Resources */,
 				154130AB2F0D4D5E0049340B /* LaunchScreen.storyboard in Resources */,
+				1534FBDD2F461A4300443AC3 /* ProductsCell.xib in Resources */,
 				15BDA6EA2F3476B900BB64DD /* CustomLabel.xib in Resources */,
 				15E73F532F2F4C9400644E9C /* MTextField.xib in Resources */,
+				15CEE2622F4C99D100CE1FF8 /* CartControlView.xib in Resources */,
+				1534FBD92F45A5AA00443AC3 /* CategoriesCell.xib in Resources */,
 				15E5698A2F0E14A90068B865 /* ButtonCustom.xib in Resources */,
 				1593DD012F30F1E10005B370 /* WelcomeViewController.xib in Resources */,
 				98E0BE352F35075C00C6F849 /* ForgotPasswordViewController.xib in Resources */,
@@ -413,29 +471,39 @@
 			buildActionMask = 2147483647;
 			files = (
 				153580352F1A58FA00278D38 /* NetworkService.swift in Sources */,
+				1534FBD82F45A5AA00443AC3 /* CategoriesCell.swift in Sources */,
 				15E73F552F2F4C9E00644E9C /* MTextField.swift in Sources */,
 				15BDA6F32F347FE600BB64DD /* FontStyles.swift in Sources */,
 				154130B92F0D542A0049340B /* ButtonCustom.swift in Sources */,
 				15097E4B2F0FADCA0083F533 /* SplashDeliveryViewController.swift in Sources */,
+				15CEE26C2F519C4400CE1FF8 /* BannersResponse.swift in Sources */,
 				1593DCFF2F30F1C00005B370 /* WelcomeViewController.swift in Sources */,
 				15F55B262F2BBF0D00783F90 /* LoadingManager.swift in Sources */,
 				154B33D62F30E228005A3BF2 /* SignUpController.swift in Sources */,
 				1541309F2F0D4D5B0049340B /* AppDelegate.swift in Sources */,
 				15BDA6E82F3476A600BB64DD /* CustomLabel.swift in Sources */,
+				15CEE2642F4D78DA00CE1FF8 /* Banners.swift in Sources */,
 				155CF29A2F18881200DE729A /* HomeViewController.swift in Sources */,
 				15097E4F2F0FB2B30083F533 /* CustomLbSplash.swift in Sources */,
 				159D69B32F3A3D290059B32C /* RegisterRequest.swift in Sources */,
+				1534FBDB2F461A2C00443AC3 /* ProductsCell.swift in Sources */,
 				1522A35B2F3CF36A00493540 /* RegisterResponse.swift in Sources */,
+				15CEE2662F4D79AE00CE1FF8 /* Categories.swift in Sources */,
 				154130A12F0D4D5B0049340B /* SceneDelegate.swift in Sources */,
 				1522A3592F3CF2E100493540 /* LoginResponse.swift in Sources */,
+				15CEE26A2F4D7D1800CE1FF8 /* ProductsResponse.swift in Sources */,
+				15CEE26F2F51A48100CE1FF8 /* BannerAPI.swift in Sources */,
 				154130BD2F0D585B0049340B /* ColorSet.swift in Sources */,
+				15CEE2712F51A48F00CE1FF8 /* ProductAPI.swift in Sources */,
 				98E0BE362F35075C00C6F849 /* ForgotPasswordViewController.swift in Sources */,
 				158A05CA2F1D38E3008C5F98 /* SplashData.swift in Sources */,
+				15CEE2682F4D7A0100CE1FF8 /* Products.swift in Sources */,
 				153580322F18CA9C00278D38 /* LoginViewController.swift in Sources */,
 				1526AD4A2F37A519000058F9 /* AuthCoordinatior.swift in Sources */,
 				1526AD442F379BE7000058F9 /* AuthAPI.swift in Sources */,
 				151B0DDB2F14EEF5009003AC /* SplashPageViewController.swift in Sources */,
 				153580372F1A592400278D38 /* SplashAPI.swift in Sources */,
+				15CEE2602F4C99BA00CE1FF8 /* CartControlView.swift in Sources */,
 				157AF07B2F373B1100CEDC8C /* LoginRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

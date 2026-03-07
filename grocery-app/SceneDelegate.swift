@@ -12,7 +12,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
         
-        let startVC = SplashPageViewController()
+        let startVC = HomeViewController()
         let navigationController = UINavigationController(rootViewController: startVC)
         navigationController.setNavigationBarHidden(true, animated: false)
         

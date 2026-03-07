@@ -1,5 +1,12 @@
 import Foundation
 
+protocol APIEndpoint {
+    var url: URL { get }
+    var method: String { get }
+    var headers: [String: String] { get }
+    var body: Data? { get }
+}
+
 final class NetworkService {
 
     static let shared = NetworkService()
